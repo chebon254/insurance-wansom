@@ -1,0 +1,128 @@
+* {
+    margin: 0px;
+    box-sizing: border-box;
+    padding: 0px;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.forgot {
+    height: 100vh;
+    width: 100vw;
+    background-color: #0F305E;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.forgot-contain {
+    width: 100%;
+    max-width: 634px;
+    height: 100%;
+    max-height: 621px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    border-radius: 90px;
+}
+
+.fgt-in {
+    width: 100%;
+    max-width: 426px;
+    height: 100%;
+    max-height: 321px;
+    padding: 10px;
+}
+
+.fgt-in .fm-ctrl {
+    padding: 14px 0px 24px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.login-form-title {
+    font-weight: Bold;
+    font-size: 40.06px;
+    line-height: 16px;
+    color: #0F305E;
+}
+.fgt-in .welcome-text{
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 25px;
+    color: #0F305E;
+}
+.fgt-in form .fm-ctrl.input{
+    position: relative;
+}
+.error-message{
+    position: absolute;
+    bottom: 0px;
+    left: 18px;
+}
+.error-message p, .error-message a{
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.56px;
+    color: #FF0D0D;
+}
+.fgt-in form .fm-ctrl.input input{
+    height: 50px;
+    width: 100%;
+    max-width: 416px;
+    border: 1.18px solid #D9D9D9;
+    border-radius: 25px;
+    outline: none;
+    padding: 10px 38px;
+    font-size: 16px;
+    color: #000000;
+    font-weight: 500;
+}
+.fgt-in form .fm-ctrl.input i{
+    font-size: 18px;
+    position: absolute;
+    top: 30px;
+    right: 16px;
+}
+.fgt-in form .fm-ctrl.input i.fa-check{
+    color: #03BE4E;
+}
+.fgt-in form .fm-ctrl.input i.fa-xmark{
+    right: 18px;
+    color: #FF0D0D;
+}
+.fm-ctrl.btn{
+    align-items: center;
+}
+.fgt-in form button{
+    height: 50px;
+    width: 100%;
+    max-width: 200px;
+    border-radius: 25px;
+    outline: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 25px;
+    border: 0px;
+}
+.fgt-in .back-sign-up{
+    color: #ffffff;
+    background-color: #2D3B79;
+}
+.fgt-in .sign-up{
+    color: #ffffff;
+    background-color: #2D3B79;
+}
