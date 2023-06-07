@@ -1,0 +1,77 @@
+
+.fm-ctrl.checkbox {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: relative;
+    cursor: pointer;
+    font-size: 22px;
+    padding: 10px 10px 10px 35px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.fm-ctrl.checkbox label {
+    font-size: 12px;
+    line-height: 18px;
+    margin: 0px 0px 0px 20px;
+    color: #ffffff !important;
+}
+
+
+/* Hide the browser's default checkbox */
+.fm-ctrl.checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom checkbox */
+.fm-ctrl.checkbox .checkmark {
+    position: absolute;
+    top: 15px;
+    left: 10px;
+    height: 18px;
+    width: 18px;
+    background: rgba(37, 82, 140, 0);
+    border: 2px solid #ffffff;
+}
+
+/* On mouse-over, add a grey background color */
+.fm-ctrl.checkbox .container-check:hover input~.checkmark {
+    background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.fm-ctrl.checkbox .container-check input:checked~.checkmark {
+    background: rgba(37, 82, 140, 0);
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.fm-ctrl.checkbox .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.fm-ctrl.checkbox .container-check input:checked~.checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.fm-ctrl.checkbox .container-check .checkmark:after {
+    left: 4px;
+    top: 1px;
+    width: 4px;
+    height: 8px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
