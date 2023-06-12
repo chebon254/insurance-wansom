@@ -191,10 +191,13 @@ body {
 
 .dash-view {
     height: 100%;
+    min-height: fit-content;
     flex-grow: 2;
     background-color: #F8F8F8;
     padding: 15px;
     overflow: scroll !important;
+    position: relative;
+    z-index: 0;
 }
 
 .tp-dash-vw {
@@ -309,6 +312,7 @@ body {
     position: absolute;
     top: 0px;
     right: 0px;
+    z-index: 10;
     background-color: #ffffff;
     border-radius: 10px;
     padding: 10px 0px;
@@ -923,6 +927,7 @@ body {
 }
 
 .claim-data-bottom.tabbed .tab-content {
+    width: 100%;
     display: none;
     padding: 10px;
     background-color: #f8f8f8;
@@ -1097,18 +1102,20 @@ body {
 
 .claim-dt-right {
     height: 100%;
+    min-height: fit-content !important;
     width: 320px;
     background-color: #ffffff;
     flex-grow: 1;
     position: relative;
-    padding-bottom: 76px;
 }
 .claim-dt-right-tab{
     height: 100%;
     width: 100%;
+    margin: 0px 0px 76px;
 }
 .claim-dt-right.tabs{
     height: fit-content;
+    width: 100% !important;
     border-bottom: 1px solid #E2DFDF;
     display: flex;
     align-items: center;
@@ -1244,6 +1251,112 @@ body {
     font-weight: 500;
     line-height: 21px;
     color: #6C6C6C;
+}
+#notes{
+    padding: 15px;
+}
+#notes .note-top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#notes .note-status-btns{
+    height: fit-content;
+    width: fit-content;
+    border-radius: 10px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    border: 1px solid #E2DFDF;
+}
+#notes .note-status-btns button, 
+#notes .note-add-btn button{
+    width: fit-content;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 21px;
+    color: #000000;
+    padding: 8px 16px;
+    outline: none;
+    border: 0px;
+}
+#notes .note-status-btns button.btn-active{
+    background-color: #C6DBFC;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+#notes .note-status-btns button.btn-resolved{
+    background-color: #ffffff;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+#notes .note-add-btn button{
+    color: #0166FF !important;
+    background-color: #00000000 !important;
+}
+#notes .note-card{
+    height: fit-content;
+    width: 100%;
+    padding: 14px;
+    margin: 20px 0px;
+    background-color: #F8F8F8;
+    border-radius: 8px;
+}
+#notes .card-top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22px;
+}
+#notes .card-top button{
+    padding: 5px;
+    background-color: #00000000;
+    border: 0px;
+    outline: none;
+}
+#notes .card-timestamp{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 22px;
+    color: #6C6C6C;
+}
+#notes .card-text{
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 17px;
+    color: #000000;
+    padding: 6px 0px;
+}
+#notes .card-bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#notes .card-bm-btns{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#notes .card-bm-btns button{
+    font-size: 10px;
+    line-height: 22px;
+    font-weight: 500;
+    padding: 2px 10px;
+    border-radius: 4px;
+    margin: 0px 10px 0px 0px;
+    border: 0px;
+    background-color: #EAEAF2;
+}
+#notes .card-bottom button.i-btn{
+    padding: 5px;
+    background-color: #00000000;
+    border: 0px;
+    outline: none;
+}
+#notes .card-bottom button.i-btn svg{
+    margin: 0px 6px 0px 0px;
 }
 /* == || CLAIMS == */
 
