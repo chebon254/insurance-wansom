@@ -531,6 +531,57 @@
                                 </table>
                             </div>
                         </div>
+                        <div class="tab-title" style="margin-top: 20px;">
+                            <span>Primary Insurance</span>
+                        </div>
+                        <div class="claim-info-tab-content bm-sect">
+                            <div class="cards-contain">
+                                <div class="cards">
+                                    <div class="card">
+                                        <h3>Payer Name</h3>
+                                        <p>Nairobi Hospital</p>
+                                    </div>
+                                    <div class="card one">
+                                        <h3>Group</h3>
+                                        <p>66</p>
+                                    </div>
+                                </div>
+                                <div class="cards">
+                                    <div class="card">
+                                        <h3>Address</h3>
+                                        <p>11street, Nairobi, Kinoo, Kenya</p>
+                                    </div>
+                                    <div class="card">
+                                        <h3>Phone</h3>
+                                        <p>(254) 784 9889</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="image-contain">
+                                <div class="image-card">
+                                    <div class="image-card-txt">
+                                        <span>Insurance Card</span> <br>
+                                        <button class="btn">Upload Image</button>
+                                        <input type="file" name="myfile" id="file" accept="image/*" onchange="handleFiles(this.files)" >
+                                    </div>
+                                </div>
+                            </div>
+                            <script>
+                                function handleFiles(files) {
+                                var imageType = /^image\//;
+
+                                for (var i = 0; i < files.length; i++) {
+                                    var file = files[i];
+                                    if (!imageType.test(file.type)) {
+                                    alert("Please select an image only");
+                                    continue;
+                                    }
+                                    // Process the image file here if it is valid
+                                }
+                                }
+
+                            </script>
+                        </div>
                     </div>
                     <div id="Payment" class="tab-content">
                         Payment
@@ -545,8 +596,66 @@
             </div>
         </div>
         <div class="claim-dt-right">
-            <div class="claim-data-tab">
-                <button>Tab</button>
+            <div class="claim-dt-right-tab">
+                <div class="claim-dt-right tabs">
+                    <div class="tab-buttons">
+                        <div class="side-tab-button active" onclick="changeSideTab(event, 'status')">Status</div>
+                        <div class="side-tab-button" onclick="changeSideTab(event, 'notes')">Notes <div class="dt-notes-num box">8</div></div>
+                        <div class="side-tab-button" onclick="changeSideTab(event, 'tasks')">Tasks <div class="dt-notes-num box">10</div></div>
+                    </div>
+                </div>
+                <div class="side-tabs-content">
+                    <div id="status" class="side-tab-content active">
+                        <div class="side-tab-title">
+                            <div class="icon">
+                                <svg width="8" height="11" viewBox="0 0 8 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.88017 5.93829V0.536011" stroke="#130F26" stroke-width="0.651967" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3.88014 10.558C4.63827 10.558 7.06175 6.71669 6.62594 6.28088C6.19014 5.84508 1.61179 5.80343 1.13433 6.28088C0.656881 6.75894 3.12261 10.558 3.88014 10.558Z" stroke="#130F26" stroke-width="0.651967" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>                                    
+                            </div>
+                            <div class="side-tab-title-text">
+                                Claim Received
+                            </div>
+                        </div>
+                        <div class="side-tb-content">
+                            <div class="content">
+                                <div class="txt">Notification sent to Client & Provider</div>
+                                <div class="time-stamp">Jun 19, 2020 10.30 AM</div>
+                            </div>
+                        </div>
+                        <div class="side-tab-title">
+                            <div class="icon">
+                                <svg width="8" height="11" viewBox="0 0 8 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.88017 5.93829V0.536011" stroke="#130F26" stroke-width="0.651967" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3.88014 10.558C4.63827 10.558 7.06175 6.71669 6.62594 6.28088C6.19014 5.84508 1.61179 5.80343 1.13433 6.28088C0.656881 6.75894 3.12261 10.558 3.88014 10.558Z" stroke="#130F26" stroke-width="0.651967" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>                                    
+                            </div>
+                            <div class="side-tab-title-text">
+                                Initial review
+                            </div>
+                        </div>
+                        <div class="side-tb-content">
+                            <div class="content">
+                                <div class="txt">Assigned to Reviewers</div>
+                                <div class="time-stamp">Jun 19, 2020 10.30 AM</div>
+                            </div>
+                            <div class="content">
+                                <div class="txt">3 Todo created by Lera Grace</div>
+                                <div class="time-stamp">Jun 19, 2020 10.30 AM</div>
+                            </div>
+                            <div class="content">
+                                <div class="txt">Moved to Evidence Gathering, RevIew by Grace Athiambo</div>
+                                <div class="time-stamp">Jun 19, 2020 10.30 AM</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="notes" class="side-tab-content">
+                        Notes
+                    </div>
+                    <div id="tasks" class="side-tab-content">
+                        Tasks
+                    </div>
+                </div>
             </div>
         </div>
     </div>

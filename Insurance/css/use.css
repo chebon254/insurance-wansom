@@ -1,22 +1,21 @@
 /* ===== TABS ====== */
 /* CSS Styles */
-.claim-data-bottom.tabbed .tabs {
-  background-color: #ffffff;
+.claim-dt-right-tab .tabs {
+  background-color: #f8f8f8;
 }
 
-.claim-data-bottom.tabbed .tabbed-sections {
+.claim-dt-right-tab .tabbed-sections {
   width: 100%;
   margin: 0 auto;
 }
 
-.claim-data-bottom.tabbed .tab-buttons {
+.claim-dt-right-tab .tab-buttons {
   display: flex;
   justify-content: space-between;
   width: fit-content;
-  margin: 0px auto 0px;
 }
 
-.claim-data-bottom.tabbed .tab-button {
+.claim-dt-right-tab .tab-button {
   height: 36px;
   padding: 10px 20px;
   cursor: pointer;
@@ -24,27 +23,89 @@
   color: #000;
   font-size: 14px;
   font-weight: 500;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
-.claim-data-bottom.tabbed .tab-button.active {
-  border-bottom: 4px solid #8100ea;
-  color: #8100ea;
+.claim-dt-right-tab .tab-button.active {
+  color: #ffffff;
+  background-color: #0F305E;
 }
 
-.claim-data-bottom.tabbed .tabs-content {
+.claim-dt-right-tab .tabs-content {
   height: 100%;
-  background-color: #dadce0;
+  background-color: #f8f8f8;
 }
 
-.claim-data-bottom.tabbed .tab-content {
+.claim-dt-right-tab .tab-content {
   display: none;
   padding: 10px;
-  border: 1px solid #ddd;
-
+  background-color: #f8f8f8;
+  padding: 20px 0px 0px 0px;
 }
 
-.claim-data-bottom.tabbed .tab-content.active {
+.claim-dt-right-tab .tab-content.active {
   display: block;
+}
+
+.claim-dt-right-tab .tab-title {
+  padding: 10px 10px;
+}
+
+.claim-dt-right {
+  background-color: #ffffff;
+  padding: 14px;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.claim-dt-right .cards,
+.claim-dt-right .card.middle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.claim-dt-right .cards {
+  margin: 0px 0px 20px;
+}
+
+.claim-dt-right .card {
+  height: fit-content;
+  width: fit-content;
+}
+
+.card.middle .card.one {
+  margin: 0px 30px 0px 0px;
+}
+
+.card.middle .card.two {
+  margin: 0px 0px 0px 30px;
+}
+
+.claim-dt-right .card h3 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  color: #959595;
+}
+
+.claim-dt-right .card p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  color: #000000;
+}
+
+.claim-dt-right .card button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0px;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  background-color: #ffffff;
 }
 
 /* ===== TABS ====== */

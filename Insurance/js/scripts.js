@@ -43,3 +43,23 @@ function changeTab(event, tabId) {
 }
 /* ======== TABS ========== */
 
+/* ======== SIDE TABS ========== */
+// JavaScript
+function changeSideTab(event, tabId) {
+    // Get all tab buttons and tab contents
+    var tabButtons = document.getElementsByClassName('side-tab-button');
+    var tabContents = document.getElementsByClassName('side-tab-content');
+
+    // Remove 'active' class from all tab buttons and tab contents
+    for (var i = 0; i < tabButtons.length; i++) {
+        tabButtons[i].classList.remove('active');
+    }
+    for (var i = 0; i < tabContents.length; i++) {
+        tabContents[i].classList.remove('active');
+    }
+
+    // Add 'active' class to the selected tab button and tab content
+    event.currentTarget.classList.add('active');
+    document.getElementById(tabId).classList.add('active');
+}
+/* ======== SIDE TABS ========== */

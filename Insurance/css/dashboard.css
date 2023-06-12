@@ -931,47 +931,57 @@ body {
 .claim-data-bottom.tabbed .tab-content.active {
     display: block;
 }
-.claim-data-bottom.tabbed .tab-title{
+
+.claim-data-bottom.tabbed .tab-title {
     padding: 10px 10px;
 }
-.claim-info-tab-content{
+
+.claim-info-tab-content {
     background-color: #ffffff;
     padding: 14px;
     width: 100%;
     border-radius: 10px;
 }
-.claim-info-tab-content .cards, 
-.claim-info-tab-content .card.middle{
+
+.claim-info-tab-content .cards,
+.claim-info-tab-content .card.middle {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.claim-info-tab-content .cards{
+
+.claim-info-tab-content .cards {
     margin: 0px 0px 20px;
 }
-.claim-info-tab-content .card{
+
+.claim-info-tab-content .card {
     height: fit-content;
     width: fit-content;
 }
-.card.middle .card.one{
+
+.card.middle .card.one {
     margin: 0px 30px 0px 0px;
 }
-.card.middle .card.two{
+
+.card.middle .card.two {
     margin: 0px 0px 0px 30px;
 }
-.claim-info-tab-content .card h3{
+
+.claim-info-tab-content .card h3 {
     font-size: 14px;
     font-weight: 400;
     line-height: 21px;
     color: #959595;
 }
-.claim-info-tab-content .card p{
+
+.claim-info-tab-content .card p {
     font-size: 14px;
     font-weight: 400;
     line-height: 21px;
     color: #000000;
 }
-.claim-info-tab-content .card button{
+
+.claim-info-tab-content .card button {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -981,28 +991,33 @@ body {
     padding: 5px;
     background-color: #ffffff;
 }
+
 /* ===== TABS ====== */
-.claim-info-table{
+.claim-info-table {
     width: 100%;
     padding: 0px 0px 20px;
 }
-.claim-info-table .tbl-ttl span{
+
+.claim-info-table .tbl-ttl span {
     font-size: 14px;
     font-weight: 500;
     line-height: 22px;
     color: #000000;
     margin: 6px 0px;
 }
-.claim-info-table table{
+
+.claim-info-table table {
     width: 100%;
     font-size: 14px;
     font-weight: 500;
     border-collapse: collapse;
 }
-.claim-info-table table thead{
+
+.claim-info-table table thead {
     background-color: #0F305E;
     color: #ffffff;
 }
+
 .claim-info-table table tbody tr {
     border-bottom: 1px solid #E2DFDF;
 }
@@ -1013,16 +1028,129 @@ body {
     text-align: left;
     padding: 10px 4px;
 }
-.claim-info-tabletable tbody tr td.dark-blue{
+
+.claim-info-tabletable tbody tr td.dark-blue {
     background-color: #0F305E !important;
     color: #ffffff;
 }
+.claim-info-tab-content.bm-sect {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.claim-info-tab-content.bm-sect .card {
+    width: 240px;
+}
+
+.image-card {
+    height: 150px;
+    width: 264px;
+    border-radius: 16px;
+    border: 1px dashed #E2DFDF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.image-card-txt{
+    position: relative;
+}
+
+.image-card span {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 22px;
+    color: #959595;
+    padding: 0px 0px 16px;
+    position: absolute;
+    margin: auto;
+    top: -10px;
+    left: 0px;
+    width: 100%;
+}
+
+.image-card button.btn {
+    padding: 0px;
+    border: 1px solid #E2DFDF;
+    background-color: #ffffff;
+    color: #000000;
+    outline: none;
+    border-radius: 10px;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 21px;
+    height: 32px;
+    width: 140px;
+}
+
+
+.image-card input[type=file] {
+    height: 32px;
+    width: 140px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+}
+
 .claim-dt-right {
     height: 100%;
     width: 320px;
     background-color: #ffffff;
 }
-
+.claim-dt-right-tab{
+    height: 100%;
+    width: 100%;
+}
+.claim-dt-right.tabs{
+    border-bottom: 1px solid #E2DFDF;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0px 20px;
+}
+.claim-dt-right.tabs .tab-buttons{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 8px 0px 0px;
+}
+.claim-dt-right.tabs .tab-buttons .side-tab-button{
+    padding: 8px 10px;
+    color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border-bottom: 3px solid #0166FF00;
+    cursor: pointer;
+}
+.tab-buttons .side-tab-button.active{
+    color: #0166FF;
+    border-bottom: 3px solid #0166FF !important;
+}
+.side-tab-content{
+    display: none;
+    padding: 20px;
+    width: 100%;
+}
+.side-tab-content.active{
+    display: block;
+}
+.dt-notes-num.box{
+    height: 18px;
+    width: 18px;
+    border-radius: 4px;
+    background-color: #D1E4FF;
+    color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 22px;
+    margin: 0px 0px 0px 4px;
+}
 /* == || CLAIMS == */
 
 
