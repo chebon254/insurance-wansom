@@ -1101,6 +1101,7 @@ body {
     background-color: #ffffff;
     flex-grow: 1;
     position: relative;
+    padding-bottom: 76px;
 }
 .claim-dt-right-tab{
     height: 100%;
@@ -1183,13 +1184,22 @@ body {
     color: #000000;
     margin-left: 10px;
 }
+.side-tab-title-text.blue-text{
+    color: #0066F9 !important;
+    font-size: 13px;
+    margin-left: 0px !important;
+}
 .side-tb-content{
     border-left: 1px dashed #E2DFDF;
+}
+.side-tb-content.rm-border{
+    border-left: 0px !important;
 }
 .side-tb-content .content{
     font-size: 11px;
     font-weight: 500;
     line-height: 21px;
+    color: #6C6C6C;
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
@@ -1211,6 +1221,29 @@ body {
     font-style: italic;
     color: #727272;
     padding: 14px 14px 40px;
+}
+.updates-content{
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 6px 0px;
+}
+.updates-content .icon{
+    position: absolute;
+    left: -20px;
+}
+.updates-content .updates-text{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    color: #6C6C6C;
+}
+.updates-content .updates-timestamp{
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 21px;
+    color: #6C6C6C;
 }
 /* == || CLAIMS == */
 
