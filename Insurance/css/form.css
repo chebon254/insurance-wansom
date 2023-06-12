@@ -15,7 +15,7 @@ html {
 
 .login,
 .login-contain {
-    min-height: 100vh;
+    min-height: fit-content;
     width: 100vw;
     background-color: #ffffff;
 }
@@ -42,6 +42,10 @@ html {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background-color: #ffffff;
+}
+.fm-ctrl.checkbox.sign{
+    padding: 24px 0px 24px;
 }
 
 .login-form-title {
@@ -97,7 +101,27 @@ html {
     letter-spacing: 0.56px;
     color: #FF0D0D;
 }
-
+.form-side form .fm-ctrl.input select{
+    height: 50px;
+    width: 100%;
+    max-width: 80px;
+    outline: none;
+    border: 1.18px solid #D9D9D9;
+    border-radius: 25px;
+    margin: 0px 10px 0px 0px;
+    background-color: #ffffff;
+    padding: 10px 14px;
+    font-size: 24px;
+}
+.form-side form .fm-ctrl.input select{
+    height: 50px;
+    width: 100%;
+    max-width: 80px;
+    outline: none;
+    border: 1.18px solid #D9D9D9;
+    border-radius: 25px;
+    padding: 10px 14px;
+}
 .form-side form .fm-ctrl.input input {
     height: 50px;
     width: 100%;
@@ -153,9 +177,9 @@ html {
 }
 
 .fm-ctrl.checkbox {
+    align-items: flex-start !important;
     justify-content: center;
 }
-
 /* The ctn-check */
 .ctn-check {
     display: block;
@@ -231,11 +255,11 @@ html {
     color: #3a3541de;
     letter-spacing: 0.16px;
     padding: 0px 0px 0px 10px;
-    margin-left: 16px;
+    margin-left: 20px;
 }
 
 .image-side {
-    height: 100vh;
+    height: 850px;
     width: 50%;
     background-image: url('images/family.png');
     background-size: cover;
