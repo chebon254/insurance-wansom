@@ -814,6 +814,7 @@ body {
 }
 
 .claim-data-info {
+    height: 100%;
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
@@ -1098,12 +1099,15 @@ body {
     height: 100%;
     width: 320px;
     background-color: #ffffff;
+    flex-grow: 1;
+    position: relative;
 }
 .claim-dt-right-tab{
     height: 100%;
     width: 100%;
 }
 .claim-dt-right.tabs{
+    height: fit-content;
     border-bottom: 1px solid #E2DFDF;
     display: flex;
     align-items: center;
@@ -1117,13 +1121,16 @@ body {
     padding: 8px 0px 0px;
 }
 .claim-dt-right.tabs .tab-buttons .side-tab-button{
-    padding: 8px 10px;
+    padding: 8px 20px 8px 10px;
     color: #000000;
     display: flex;
     align-items: center;
     justify-content: flex-start;
     border-bottom: 3px solid #0166FF00;
     cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22px;
 }
 .tab-buttons .side-tab-button.active{
     color: #0166FF;
@@ -1131,7 +1138,7 @@ body {
 }
 .side-tab-content{
     display: none;
-    padding: 20px;
+    padding: 14px 7px 14px 14px;
     width: 100%;
 }
 .side-tab-content.active{
@@ -1146,10 +1153,64 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 18px;
+    margin: 0px 0px 0px 4px;
+}
+
+.side-tb-content{
+    padding: 0px 0px 0px 15px ;
+}
+.side-tab-title{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 20px 0px 10px;
+}
+.side-tab-title .icon{
+    margin-left: -15px;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.side-tab-title-text{
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 22px;
+    color: #000000;
+    margin-left: 10px;
+}
+.side-tb-content{
+    border-left: 1px dashed #E2DFDF;
+}
+.side-tb-content .content{
     font-size: 11px;
     font-weight: 500;
+    line-height: 21px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    border-bottom: 1px solid #E2DFDF;
+    padding: 4px 0px;
+}
+.side-tb-content .content .txt{
+    padding: 0px 6px 0px 0px;
+}
+.side-tb-content .content .time-stamp{
+    min-width: 120px;
+}
+.claim-dt-bottom-time{
+    position: absolute;
+    bottom: 0px;
+    font-size: 14px;
+    font-weight: 500;
     line-height: 22px;
-    margin: 0px 0px 0px 4px;
+    font-style: italic;
+    color: #727272;
+    padding: 14px 14px 40px;
 }
 /* == || CLAIMS == */
 
