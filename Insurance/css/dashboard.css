@@ -318,6 +318,7 @@ body {
     padding: 10px 0px;
     display: none;
     width: 236px;
+    box-shadow: 2px 2px 12px #00000033;
 }
 
 .drp-menu.top {
@@ -1103,15 +1104,13 @@ body {
 .claim-dt-right {
     height: 100%;
     min-height: fit-content !important;
-    width: 320px;
+    width: 340px;
     background-color: #ffffff;
-    flex-grow: 1;
     position: relative;
 }
 .claim-dt-right-tab{
     height: 100%;
     width: 100%;
-    margin: 0px 0px 76px;
 }
 .claim-dt-right.tabs{
     height: fit-content;
@@ -1146,12 +1145,15 @@ body {
 }
 .side-tab-content{
     display: none;
-    padding: 14px 7px 14px 14px;
+    padding: 14px 7px 14px 18px;
     width: 100%;
 }
 .side-tab-content.active{
     display: block;
+    background-color: #ffffff;
+    padding-bottom: 70px;
 }
+
 .dt-notes-num.box{
     height: 18px;
     width: 18px;
@@ -1227,7 +1229,7 @@ body {
     line-height: 22px;
     font-style: italic;
     color: #727272;
-    padding: 14px 14px 40px;
+    padding: 14px 14px 10px;
 }
 .updates-content{
     position: relative;
