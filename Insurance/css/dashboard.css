@@ -194,7 +194,7 @@ body {
     flex-grow: 2;
     background-color: #F8F8F8;
     padding: 15px;
-    overflow-y: scroll;
+    overflow: scroll !important;
 }
 
 .tp-dash-vw {
@@ -743,9 +743,8 @@ body {
 }
 
 .record-pagination {
-    width: 100%;
-    position: absolute;
-    bottom: 0px;
+    position: sticky;
+    bottom: -15px;
     left: 0px;
     width: 100%;
     height: 65px;
@@ -803,6 +802,225 @@ body {
     background-color: #f8f8f8;
     margin: 0px 2px;
     text-align: center;
+}
+
+.claim-data-top {
+    height: fit-content;
+    background-color: #ffffff;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.claim-data-info {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.claim-dt-left {
+    padding: 40px 0px;
+    flex-grow: 2;
+}
+
+.claim-data-top-contain,
+.claim-data-bottom.tabbed {
+    padding: 0px 25px 0px 15px;
+}
+
+.claim-dt-card {
+    height: fit-content;
+    padding: 0px 10px 0px 0px;
+}
+
+.claim-dt-card.border {
+    border-right: 2px solid #E2DFDF;
+}
+
+.claim-dt-card h3 {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    color: #959595;
+}
+
+.claim-dt-card p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    color: #000000;
+}
+
+.claim-dt-card.end {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.claim-dt-card.end button {
+    border: 0px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    margin: 0px 10px;
+}
+
+.claim-data-bottom.tabbed {
+    margin: 30px 0px 0px;
+}
+
+.claim-data-bottom.tabs {
+    border-bottom: 1px solid #E2DFDF;
+}
+
+.claim-data-bottom.tabs .tab-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+/* ===== TABS ====== */
+/* CSS Styles */
+.claim-data-bottom.tabbed .tabs {
+    background-color: #f8f8f8;
+}
+
+.claim-data-bottom.tabbed .tabbed-sections {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.claim-data-bottom.tabbed .tab-buttons {
+    display: flex;
+    justify-content: space-between;
+    width: fit-content;
+}
+
+.claim-data-bottom.tabbed .tab-button {
+    height: 36px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-bottom: 4px solid transparent;
+    color: #000;
+    font-size: 14px;
+    font-weight: 500;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.claim-data-bottom.tabbed .tab-button.active {
+    color: #ffffff;
+    background-color: #0F305E;
+}
+
+.claim-data-bottom.tabbed .tabs-content {
+    height: 100%;
+    background-color: #f8f8f8;
+}
+
+.claim-data-bottom.tabbed .tab-content {
+    display: none;
+    padding: 10px;
+    background-color: #f8f8f8;
+    padding: 20px 0px 0px 0px;
+}
+
+.claim-data-bottom.tabbed .tab-content.active {
+    display: block;
+}
+.claim-data-bottom.tabbed .tab-title{
+    padding: 10px 10px;
+}
+.claim-info-tab-content{
+    background-color: #ffffff;
+    padding: 14px;
+    width: 100%;
+    border-radius: 10px;
+}
+.claim-info-tab-content .cards, 
+.claim-info-tab-content .card.middle{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.claim-info-tab-content .cards{
+    margin: 0px 0px 20px;
+}
+.claim-info-tab-content .card{
+    height: fit-content;
+    width: fit-content;
+}
+.card.middle .card.one{
+    margin: 0px 30px 0px 0px;
+}
+.card.middle .card.two{
+    margin: 0px 0px 0px 30px;
+}
+.claim-info-tab-content .card h3{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    color: #959595;
+}
+.claim-info-tab-content .card p{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    color: #000000;
+}
+.claim-info-tab-content .card button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0px;
+    outline: none;
+    cursor: pointer;
+    padding: 5px;
+    background-color: #ffffff;
+}
+/* ===== TABS ====== */
+.claim-info-table{
+    width: 100%;
+    padding: 0px 0px 20px;
+}
+.claim-info-table .tbl-ttl span{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22px;
+    color: #000000;
+    margin: 6px 0px;
+}
+.claim-info-table table{
+    width: 100%;
+    font-size: 14px;
+    font-weight: 500;
+    border-collapse: collapse;
+}
+.claim-info-table table thead{
+    background-color: #0F305E;
+    color: #ffffff;
+}
+.claim-info-table table tbody tr {
+    border-bottom: 1px solid #E2DFDF;
+}
+
+.claim-info-table table thead tr th,
+.claim-info-table table tbody tr td {
+    border: none !important;
+    text-align: left;
+    padding: 10px 4px;
+}
+.claim-info-tabletable tbody tr td.dark-blue{
+    background-color: #0F305E !important;
+    color: #ffffff;
+}
+.claim-dt-right {
+    height: 100%;
+    width: 320px;
+    background-color: #ffffff;
 }
 
 /* == || CLAIMS == */

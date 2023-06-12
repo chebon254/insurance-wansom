@@ -1,59 +1,50 @@
-.drp-menu .switch {
-  position: relative;
-  display: inline-block;
-  width: 60px;
-  height: 34px;
+/* ===== TABS ====== */
+/* CSS Styles */
+.claim-data-bottom.tabbed .tabs {
+  background-color: #ffffff;
 }
 
-.drp-menu .switch input { 
-  opacity: 0;
-  width: 0;
-  height: 0;
+.claim-data-bottom.tabbed .tabbed-sections {
+  width: 100%;
+  margin: 0 auto;
 }
 
-.drp-menu .slider {
-  position: absolute;
+.claim-data-bottom.tabbed .tab-buttons {
+  display: flex;
+  justify-content: space-between;
+  width: fit-content;
+  margin: 0px auto 0px;
+}
+
+.claim-data-bottom.tabbed .tab-button {
+  height: 36px;
+  padding: 10px 20px;
   cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #ccc;
-  -webkit-transition: .4s;
-  transition: .4s;
+  border-bottom: 4px solid transparent;
+  color: #000;
+  font-size: 14px;
+  font-weight: 500;
 }
 
-.drp-menu .slider:before {
-  position: absolute;
-  content: "";
-  height: 26px;
-  width: 26px;
-  left: 4px;
-  bottom: 4px;
-  background-color: white;
-  -webkit-transition: .4s;
-  transition: .4s;
+.claim-data-bottom.tabbed .tab-button.active {
+  border-bottom: 4px solid #8100ea;
+  color: #8100ea;
 }
 
-.drp-menu input:checked + .slider {
-  background-color: #2196F3;
+.claim-data-bottom.tabbed .tabs-content {
+  height: 100%;
+  background-color: #dadce0;
 }
 
-.drp-menu input:focus + .slider {
-  box-shadow: 0 0 1px #2196F3;
+.claim-data-bottom.tabbed .tab-content {
+  display: none;
+  padding: 10px;
+  border: 1px solid #ddd;
+
 }
 
-.drp-menu input:checked + .slider:before {
-  -webkit-transform: translateX(26px);
-  -ms-transform: translateX(26px);
-  transform: translateX(26px);
+.claim-data-bottom.tabbed .tab-content.active {
+  display: block;
 }
 
-/* Rounded sliders */
-.drp-menu .slider.round {
-  border-radius: 34px;
-}
-
-.drp-menu .slider.round:before {
-  border-radius: 50%;
-}
+/* ===== TABS ====== */
