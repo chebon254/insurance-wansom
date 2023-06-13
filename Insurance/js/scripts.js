@@ -63,3 +63,29 @@ function changeSideTab(event, tabId) {
     document.getElementById(tabId).classList.add('active');
 }
 /* ======== SIDE TABS ========== */
+
+
+/* ======== POLICIES TABS ========== */
+// JavaScript
+function changePoliciesTab(event, tabId) {
+    // Get all tab buttons and tab contents
+    var tabButtons = document.getElementsByClassName('policies-tab-button');
+    var tabContents = document.getElementsByClassName('policies-tab-content');
+
+    // Remove 'active' class from all tab buttons and tab contents
+    for (var i = 0; i < tabButtons.length; i++) {
+        tabButtons[i].classList.remove('active');
+    }
+    for (var i = 0; i < tabContents.length; i++) {
+        tabContents[i].classList.remove('active');
+    }
+
+    // Add 'active' class to the selected tab button and tab content
+    event.currentTarget.classList.add('active');
+    document.getElementById(tabId).classList.add('active');
+}
+/* ======== ||  POLICIES TABS ========== */
+
+/* ======== POLICIES ACCORDION ========== */
+
+/* ========  || POLICIES ACCORDION ========== */

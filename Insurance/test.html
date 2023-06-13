@@ -1,85 +1,188 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>Sign Up Form</title>
-    <link rel="stylesheet" type="text/css" href="">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-        }
-
-        form {
-            width: 300px;
-            margin: 0 auto;
-        }
-
-        input[type="text"],
-        input[type="email"],
-        input[type="tel"],
-        input[type="password"],
-        select {
-            width: 100%;
-            padding: 10px;
-            margin: 5px 0 15px 0;
-            display: inline-block;
-            border: 1px solid #ccc;
-            box-sizing: border-box;
-        }
-
-        input[type="submit"] {
-            background-color: #4CAF50;
-            color: white;
-            padding: 10px 20px;
-            margin: 10px 0;
-            border: none;
+        table.fold-table>tbody>tr.view td,
+        table.fold-table>tbody>tr.view th {
             cursor: pointer;
-            width: 100%;
         }
 
-        input[type="submit"]:hover {
-            opacity: 0.8;
+        table.fold-table>tbody>tr.view:hover {
+            background: #000;
+        }
+
+        table.fold-table>tbody>tr.view.open {
+            background: tomato;
+            color: white;
+        }
+
+       
+        table.fold-table>tbody>tr.fold {
+            display: none;
+        }
+
+        table.fold-table>tbody>tr.fold.open {
+            display: table-row;
         }
     </style>
 </head>
 
 <body>
-    <form id="signupForm">
-        <label for="name">Name:</label><br>
-        <input type="text" id="name" name="name" required><br>
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email" required><br>
-        <label for="country">Country:</label><br>
-        <select id="country" name="country" onchange="getPhoneCode(this.value)" required>
-            <option value="ke">🇰🇪</option>
-            <option value="ug">🇺🇬</option>
-            <!-- add more countries here -->
-        </select><br>
-        <label for="phone">Phone Number:</label><br>
-        <input type="tel" id="phone" name="phone" required><br>
-        <label for="password">Password:</label><br>
-        <input type="password" id="password" name="password" required><br>
-        <input type="submit" value="Submit">
-    </form>
+    <table class="fold-table">
+        <thead>
+            <tr>
+                <th>Company</th>
+                <th>Amount</th>
+                <th>Value</th>
+                <th>Premiums</th>
+                <th>Strategy A</th>
+                <th>Strategy B</th>
+                <th>Strategy C</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="view">
+                <td>Company Name</td>
+                <td class="pcs">457</td>
+                <td class="cur">6535178</td>
+                <td>-</td>
+                <td class="per">50,71</td>
+                <td class="per">49,21</td>
+                <td class="per">0</td>
+            </tr>
+            <tr class="fold">
+                <td colspan="7">
+                    <div class="fold-content">
+                        <h3>Company Name</h3>
+                        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                        </p>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Company name</th>
+                                    <th>Customer no</th>
+                                    <th>Customer name</th>
+                                    <th>Insurance no</th>
+                                    <th>Strategy</th>
+                                    <th>Start</th>
+                                    <th>Current</th>
+                                    <th>Diff</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Sony</td>
+                                    <td>13245</td>
+                                    <td>John Doe</td>
+                                    <td>064578</td>
+                                    <td>A, 100%</td>
+                                    <td class="cur">20000</td>
+                                    <td class="cur">33000</td>
+                                    <td class="cur">13000</td>
+                                </tr>
+                                <tr>
+                                    <td>Sony</td>
+                                    <td>13288</td>
+                                    <td>Claire Bennet</td>
+                                    <td>064877</td>
+                                    <td>B, 100%</td>
+                                    <td class="cur">28000</td>
+                                    <td class="cur">48000</td>
+                                    <td class="cur">20000</td>
+                                </tr>
+                                <tr>
+                                    <td>Sony</td>
+                                    <td>12341</td>
+                                    <td>Barry White</td>
+                                    <td>064123</td>
+                                    <td>A, 100%</td>
+                                    <td class="cur">10000</td>
+                                    <td class="cur">22000</td>
+                                    <td class="cur">12000</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </td>
+            </tr>
+            <tr class="view">
+                <td>Company Name</td>
+                <td class="pcs">457</td>
+                <td class="cur">6535178</td>
+                <td>-</td>
+                <td class="per">50,71</td>
+                <td class="per">49,21</td>
+                <td class="per">0</td>
+            </tr>
+            <tr class="fold">
+                <td colspan="7">
+                    <div class="fold-content">
+                        <h3>Company Name</h3>
+                        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                        </p>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Company name</th>
+                                    <th>Customer no</th>
+                                    <th>Customer name</th>
+                                    <th>Insurance no</th>
+                                    <th>Strategy</th>
+                                    <th>Start</th>
+                                    <th>Current</th>
+                                    <th>Diff</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Sony</td>
+                                    <td>13245</td>
+                                    <td>John Doe</td>
+                                    <td>064578</td>
+                                    <td>A, 100%</td>
+                                    <td class="cur">20000</td>
+                                    <td class="cur">33000</td>
+                                    <td class="cur">13000</td>
+                                </tr>
+                                <tr>
+                                    <td>Sony</td>
+                                    <td>13288</td>
+                                    <td>Claire Bennet</td>
+                                    <td>064877</td>
+                                    <td>B, 100%</td>
+                                    <td class="cur">28000</td>
+                                    <td class="cur">48000</td>
+                                    <td class="cur">20000</td>
+                                </tr>
+                                <tr>
+                                    <td>Sony</td>
+                                    <td>12341</td>
+                                    <td>Barry White</td>
+                                    <td>064123</td>
+                                    <td>A, 100%</td>
+                                    <td class="cur">10000</td>
+                                    <td class="cur">22000</td>
+                                    <td class="cur">12000</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
     <script>
-        function getPhoneCode(country) {
-            var phoneCode;
-            switch (country) {
-                case "ke":
-                    phoneCode = "+254";
-                    break;
-                case "ug":
-                    phoneCode = "+255";
-                    break;
-                // add more countries here
-                default:
-                    phoneCode = "+1";
-            }
-
-            document.getElementById("phone").placeholder = phoneCode;
-        }
-
+        $(function () {
+            $(".fold-table tr.view").on("click", function () {
+                $(this).toggleClass("open").next(".fold").toggleClass("open");
+            });
+        });
     </script>
 </body>
 

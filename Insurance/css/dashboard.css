@@ -1040,6 +1040,7 @@ body {
     background-color: #0F305E !important;
     color: #ffffff;
 }
+
 .claim-info-tab-content.bm-sect {
     display: flex;
     align-items: flex-start;
@@ -1060,7 +1061,8 @@ body {
     justify-content: center;
     text-align: center;
 }
-.image-card-txt{
+
+.image-card-txt {
     position: relative;
 }
 
@@ -1108,11 +1110,13 @@ body {
     background-color: #ffffff;
     position: relative;
 }
-.claim-dt-right-tab{
+
+.claim-dt-right-tab {
     height: 100%;
     width: 100%;
 }
-.claim-dt-right.tabs{
+
+.claim-dt-right.tabs {
     height: fit-content;
     width: 100% !important;
     border-bottom: 1px solid #E2DFDF;
@@ -1121,13 +1125,15 @@ body {
     justify-content: flex-start;
     padding: 0px 20px;
 }
-.claim-dt-right.tabs .tab-buttons{
+
+.claim-dt-right.tabs .tab-buttons {
     display: flex;
     align-items: center;
     justify-content: flex-start;
     padding: 8px 0px 0px;
 }
-.claim-dt-right.tabs .tab-buttons .side-tab-button{
+
+.claim-dt-right.tabs .tab-buttons .side-tab-button {
     padding: 8px 20px 8px 10px;
     color: #000000;
     display: flex;
@@ -1139,22 +1145,25 @@ body {
     font-weight: 500;
     line-height: 22px;
 }
-.tab-buttons .side-tab-button.active{
+
+.tab-buttons .side-tab-button.active {
     color: #0166FF;
     border-bottom: 3px solid #0166FF !important;
 }
-.side-tab-content{
+
+.side-tab-content {
     display: none;
     padding: 14px 7px 14px 18px;
     width: 100%;
 }
-.side-tab-content.active{
+
+.side-tab-content.active {
     display: block;
     background-color: #ffffff;
     padding-bottom: 70px;
 }
 
-.dt-notes-num.box{
+.dt-notes-num.box {
     height: 18px;
     width: 18px;
     border-radius: 4px;
@@ -1169,16 +1178,18 @@ body {
     margin: 0px 0px 0px 4px;
 }
 
-.side-tb-content{
-    padding: 0px 0px 0px 15px ;
+.side-tb-content {
+    padding: 0px 0px 0px 15px;
 }
-.side-tab-title{
+
+.side-tab-title {
     display: flex;
     align-items: center;
     justify-content: flex-start;
     margin: 20px 0px 10px;
 }
-.side-tab-title .icon{
+
+.side-tab-title .icon {
     margin-left: -15px;
     height: 30px;
     width: 30px;
@@ -1186,25 +1197,30 @@ body {
     align-items: center;
     justify-content: center;
 }
-.side-tab-title-text{
+
+.side-tab-title-text {
     font-size: 14px;
     font-weight: 600;
     line-height: 22px;
     color: #000000;
     margin-left: 10px;
 }
-.side-tab-title-text.blue-text{
+
+.side-tab-title-text.blue-text {
     color: #0066F9 !important;
     font-size: 13px;
     margin-left: 0px !important;
 }
-.side-tb-content{
+
+.side-tb-content {
     border-left: 1px dashed #E2DFDF;
 }
-.side-tb-content.rm-border{
+
+.side-tb-content.rm-border {
     border-left: 0px !important;
 }
-.side-tb-content .content{
+
+.side-tb-content .content {
     font-size: 11px;
     font-weight: 500;
     line-height: 21px;
@@ -1215,13 +1231,16 @@ body {
     border-bottom: 1px solid #E2DFDF;
     padding: 4px 0px;
 }
-.side-tb-content .content .txt{
+
+.side-tb-content .content .txt {
     padding: 0px 6px 0px 0px;
 }
-.side-tb-content .content .time-stamp{
+
+.side-tb-content .content .time-stamp {
     min-width: 120px;
 }
-.claim-dt-bottom-time{
+
+.claim-dt-bottom-time {
     position: absolute;
     bottom: 0px;
     font-size: 14px;
@@ -1231,38 +1250,45 @@ body {
     color: #727272;
     padding: 14px 14px 10px;
 }
-.updates-content{
+
+.updates-content {
     position: relative;
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
     padding: 6px 0px;
 }
-.updates-content .icon{
+
+.updates-content .icon {
     position: absolute;
     left: -20px;
 }
-.updates-content .updates-text{
+
+.updates-content .updates-text {
     font-size: 14px;
     font-weight: 500;
     line-height: 21px;
     color: #6C6C6C;
 }
-.updates-content .updates-timestamp{
+
+.updates-content .updates-timestamp {
     font-size: 11px;
     font-weight: 500;
     line-height: 21px;
     color: #6C6C6C;
 }
-#notes{
+
+#notes {
     padding: 15px;
 }
-#notes .note-top{
+
+#notes .note-top {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-#notes .note-status-btns{
+
+#notes .note-status-btns {
     height: fit-content;
     width: fit-content;
     border-radius: 10px;
@@ -1271,8 +1297,9 @@ body {
     justify-content: space-between;
     border: 1px solid #E2DFDF;
 }
-#notes .note-status-btns button, 
-#notes .note-add-btn button{
+
+#notes .note-status-btns button,
+#notes .note-add-btn button {
     width: fit-content;
     font-size: 13px;
     font-weight: 500;
@@ -1282,21 +1309,25 @@ body {
     outline: none;
     border: 0px;
 }
-#notes .note-status-btns button.btn-active{
+
+#notes .note-status-btns button.btn-active {
     background-color: #C6DBFC;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
 }
-#notes .note-status-btns button.btn-resolved{
+
+#notes .note-status-btns button.btn-resolved {
     background-color: #ffffff;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
 }
-#notes .note-add-btn button{
+
+#notes .note-add-btn button {
     color: #0166FF !important;
     background-color: #00000000 !important;
 }
-#notes .note-card{
+
+#notes .note-card {
     height: fit-content;
     width: 100%;
     padding: 14px;
@@ -1304,7 +1335,8 @@ body {
     background-color: #F8F8F8;
     border-radius: 8px;
 }
-#notes .card-top{
+
+#notes .card-top {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -1312,36 +1344,42 @@ body {
     font-weight: 500;
     line-height: 22px;
 }
-#notes .card-top button{
+
+#notes .card-top button {
     padding: 5px;
     background-color: #00000000;
     border: 0px;
     outline: none;
 }
-#notes .card-timestamp{
+
+#notes .card-timestamp {
     font-size: 12px;
     font-weight: 400;
     line-height: 22px;
     color: #6C6C6C;
 }
-#notes .card-text{
+
+#notes .card-text {
     font-size: 13px;
     font-weight: 400;
     line-height: 17px;
     color: #000000;
     padding: 6px 0px;
 }
-#notes .card-bottom{
+
+#notes .card-bottom {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-#notes .card-bm-btns{
+
+#notes .card-bm-btns {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-#notes .card-bm-btns button{
+
+#notes .card-bm-btns button {
     font-size: 10px;
     line-height: 22px;
     font-weight: 500;
@@ -1351,15 +1389,18 @@ body {
     border: 0px;
     background-color: #EAEAF2;
 }
-#notes .card-bottom button.i-btn{
+
+#notes .card-bottom button.i-btn {
     padding: 5px;
     background-color: #00000000;
     border: 0px;
     outline: none;
 }
-#notes .card-bottom button.i-btn svg{
+
+#notes .card-bottom button.i-btn svg {
     margin: 0px 6px 0px 0px;
 }
+
 /* == || CLAIMS == */
 
 
@@ -1416,3 +1457,210 @@ body {
 }
 
 /* == || CLIENTS == */
+
+/* == POLICIES == */
+.policies-data {
+    padding: 20px 0px 0px;
+}
+
+/* ===== Policies TABS ====== */
+.policies-data .tabs {
+    background-color: #f8f8f8;
+}
+
+.policies-data .tab-buttons {
+    display: flex;
+    justify-content: space-between;
+    width: fit-content;
+}
+
+.policies-data .policies-tab-button {
+    height: 36px;
+    width: fit-content;
+    padding: 10px 30px;
+    cursor: pointer;
+    border-bottom: 4px solid transparent;
+    color: #000;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.policies-data .policies-tab-button.active {
+    color: #0066F9;
+    border-bottom: 3px solid #0066F9;
+}
+
+.policies-data .policies-tabs-content {
+    height: 100%;
+    background-color: #f8f8f8;
+}
+
+.policies-data .policies-tab-content {
+    display: none;
+    padding: 10px;
+    background-color: #f8f8f8;
+    padding: 20px 0px 0px 0px;
+}
+
+.policies-data .policies-tab-content.active {
+    display: block;
+}
+
+.policies-data .tab-title {
+    padding: 10px 10px;
+}
+
+/* ===== Policies TABS ====== */
+.policy-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.policy-table table thead {
+    background-color: #0F305E;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    color: #ffffff;
+}
+
+.policy-table table thead th,
+.policy-table table tbody td {
+    padding: 14px 10px;
+    text-align: left;
+}
+
+.policy-table table thead th.first,
+.policy-table table tbody td.first {
+    width: 41px !important;
+}
+
+.policy-table table thead th.keep-me {
+    height: 21px;
+    width: 21px;
+    margin: 0px !important;
+}
+
+/* The.p-t-col  ctn-check */
+.policy-table table thead .ctn-check {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.policy-table table thead .ctn-check input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom checkbox */
+.policy-table table thead .ctn-check .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 1.2px solid #E2DFDF;
+    border-radius: 4px;
+    height: 20px;
+    width: 20px;
+    background-color: #ffffff00;
+}
+
+/* On mouse-over, add a grey background color */
+.policy-table table thead .ctn-check:hover input~.checkmark {
+    background-color: #ffffff;
+}
+
+/* When the checkbox is checked, add a blue background */
+.policy-table table thead .ctn-check input:checked~.checkmark {
+    background-color: #0F305E;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.policy-table table thead .ctn-check .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.policy-table table thead .ctn-check input:checked~.checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.policy-table table thead .ctn-check .checkmark:after {
+    left: 5px;
+    top: 2px;
+    width: 4px;
+    height: 8px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.policy-table table thead.white-h {
+    background-color: #ffffff !important;
+    color: #000000;
+}
+
+.policy-accordion-btn {
+    height: 36px;
+    width: fit-content;
+    background-color: #ffffff;
+    border: 0px;
+    outline: none;
+    border-radius: 18px;
+    color: #747474;
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 18px;
+    padding-left: 20px;
+    padding-right: 20px;
+    cursor: pointer;
+}
+
+table.fold-table>tbody>tr.view td,
+table.fold-table>tbody>tr.view th {
+    cursor: pointer;
+}
+
+table.fold-table>tbody>tr.view:hover {
+    background: #0F305E;
+    color: #ffffff;
+}
+
+table.fold-table>tbody>tr.view.open {
+    background: #0F305E;
+    color: white;
+}
+
+
+table.fold-table>tbody>tr.fold {
+    display: none;
+}
+
+table.fold-table>tbody>tr.fold.open {
+    display: table-row;
+}
+.policy-accordion.open.view td .up-arrow.arrow {
+    display: block !important;
+}
+.policy-accordion.open.view td .down-arrow.arrow {
+    display: none !important;
+}
+.up-arrow.arrow {
+    display: none;
+}
+
+/* == || POLICIES == */

@@ -1,111 +1,90 @@
-/* ===== TABS ====== */
-/* CSS Styles */
-.claim-dt-right-tab .tabs {
-  background-color: #f8f8f8;
-}
-
-.claim-dt-right-tab .tabbed-sections {
-  width: 100%;
-  margin: 0 auto;
-}
-
-.claim-dt-right-tab .tab-buttons {
-  display: flex;
-  justify-content: space-between;
-  width: fit-content;
-}
-
-.claim-dt-right-tab .tab-button {
-  height: 36px;
-  padding: 10px 20px;
-  cursor: pointer;
-  border-bottom: 4px solid transparent;
-  color: #000;
+.policy-table table thead{
+  background-color: #0F305E;
   font-size: 14px;
   font-weight: 500;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+  line-height: 21px;
+  color: #ffffff;
+}
+.policy-table table thead th{
+  width: 100%;
+  max-width: 280px;
+  padding: 14px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: left;
 }
 
-.claim-dt-right-tab .tab-button.active {
-  color: #ffffff;
+.policy-table table thead th.keep-me {
+  height: 21px;
+  width: 21px;
+  margin: 0px;
+}
+
+/* The.p-t-col  ctn-check */
+.policy-table table thead .ctn-check {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.policy-table table thead .ctn-check input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.policy-table table thead .ctn-check .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 1.2px solid #E2DFDF;
+  border-radius: 4px;
+  height: 20px;
+  width: 20px;
+  background-color: #ffffff00;
+}
+
+/* On mouse-over, add a grey background color */
+.policy-table table thead .ctn-check:hover input~.checkmark {
+  background-color: #ffffff;
+}
+
+/* When the checkbox is checked, add a blue background */
+.policy-table table thead .ctn-check input:checked~.checkmark {
   background-color: #0F305E;
 }
 
-.claim-dt-right-tab .tabs-content {
-  height: 100%;
-  background-color: #f8f8f8;
-}
-
-.claim-dt-right-tab .tab-content {
+/* Create the checkmark/indicator (hidden when not checked) */
+.policy-table table thead .ctn-check .checkmark:after {
+  content: "";
+  position: absolute;
   display: none;
-  padding: 10px;
-  background-color: #f8f8f8;
-  padding: 20px 0px 0px 0px;
 }
 
-.claim-dt-right-tab .tab-content.active {
+/* Show the checkmark when checked */
+.policy-table table thead .ctn-check input:checked~.checkmark:after {
   display: block;
 }
 
-.claim-dt-right-tab .tab-title {
-  padding: 10px 10px;
+/* Style the checkmark/indicator */
+.policy-table table thead .ctn-check .checkmark:after {
+  left: 6px;
+  top: 2px;
+  width: 4px;
+  height: 8px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
-
-.claim-dt-right {
-  background-color: #ffffff;
-  padding: 14px;
-  width: 100%;
-  border-radius: 10px;
-}
-
-.claim-dt-right .cards,
-.claim-dt-right .card.middle {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.claim-dt-right .cards {
-  margin: 0px 0px 20px;
-}
-
-.claim-dt-right .card {
-  height: fit-content;
-  width: fit-content;
-}
-
-.card.middle .card.one {
-  margin: 0px 30px 0px 0px;
-}
-
-.card.middle .card.two {
-  margin: 0px 0px 0px 30px;
-}
-
-.claim-dt-right .card h3 {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 21px;
-  color: #959595;
-}
-
-.claim-dt-right .card p {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 21px;
-  color: #000000;
-}
-
-.claim-dt-right .card button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 0px;
-  outline: none;
-  cursor: pointer;
-  padding: 5px;
-  background-color: #ffffff;
-}
-
-/* ===== TABS ====== */
