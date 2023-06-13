@@ -1516,8 +1516,9 @@ body {
     border-collapse: collapse;
 }
 
-.policy-table table thead {
+.policy-table table thead.top-th {
     background-color: #0F305E;
+    border: 1px solid #0F305E;
     font-size: 14px;
     font-weight: 500;
     line-height: 21px;
@@ -1609,6 +1610,15 @@ body {
     transform: rotate(45deg);
 }
 
+.policy-table table tbody.white-h td{
+    border: 1px solid #E4E4E4;
+}
+.policy-table table tbody.white-h tr td:nth-child(1){
+    border-right: 0px !important;
+}
+.policy-table table tbody.white-h tr td:nth-child(2){
+    border-left: 0px !important;
+}
 .policy-table table thead.white-h {
     background-color: #ffffff !important;
     color: #000000;
@@ -1616,18 +1626,24 @@ body {
 
 .policy-accordion-btn {
     height: 36px;
-    width: fit-content;
-    background-color: #ffffff;
+    width: 160px;
     border: 0px;
     outline: none;
     border-radius: 18px;
-    color: #747474;
     font-size: 11px;
     font-weight: 500;
     line-height: 18px;
     padding-left: 20px;
     padding-right: 20px;
     cursor: pointer;
+}
+.policy-accordion-btn.coverage{
+    background-color: #ffffff;
+    color: #747474;
+}
+.policy-accordion-btn.renew{
+    background-color: #FF0000;
+    color: #ffffff;
 }
 
 table.fold-table>tbody>tr.view td,
@@ -1638,16 +1654,22 @@ table.fold-table>tbody>tr.view th {
 table.fold-table>tbody>tr.view:hover {
     background: #0F305E;
     color: #ffffff;
+    border: 1px solid #0F305E !important;
 }
 
 table.fold-table>tbody>tr.view.open {
     background: #0F305E;
     color: white;
+    border: 1px solid #0F305E !important;
+}
+table.fold-table>tbody>tr.view{
+    border: 1px solid #0F305E00;
 }
 
 
 table.fold-table>tbody>tr.fold {
     display: none;
+    border: 1px solid #0F305E;
 }
 
 table.fold-table>tbody>tr.fold.open {
@@ -1662,5 +1684,48 @@ table.fold-table>tbody>tr.fold.open {
 .up-arrow.arrow {
     display: none;
 }
-
+table.fold-table>tbody>tr td.table-dt-status.review{
+    color: #EB7B0B;
+}
+table.fold-table>tbody>tr td.table-dt-status.expired{
+    color: #EF1212;
+}
+table.fold-table>tbody>tr td.table-dt-status svg{
+    margin: 0px 10px 0px 0px;
+}
+.policy-table table tbody td.folded-td {
+    padding: 0px !important;
+}
+.td-txt-td .td-text{
+    text-align: center;
+}
+.td-text .nxt-bill-txt{
+    color: #8A8A8A;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+}
+.td-text .nxt-bill-price{
+    color: #000000;
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 62px;
+}
+.td-txt-td .td-text a{
+    height: 44px;
+    width: 124px;
+    background-color: #0F305E;
+    border-radius: 22px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 23px;
+}
+.td-txt-td .td-text a svg{
+    margin-left: 5px;
+}
 /* == || POLICIES == */

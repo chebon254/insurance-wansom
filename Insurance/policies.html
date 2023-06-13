@@ -287,7 +287,7 @@
             <div id="policies" class="policies-tab-content active">
                 <div class="policy-table">
                     <table class="fold-table">
-                        <thead>
+                        <thead class="top-th">
                             <tr>
                                 <th class="first">
                                     <div class="keep-me">
@@ -318,14 +318,14 @@
                                 <td>Mansion Apothecary</td>
                                 <td>Kilua, Karen, Nairobi KE</td>
                                 <td>$ 2,737.83</td>
-                                <td>
+                                <td class="table-dt-status review">
                                     <svg width="7" height="8" viewBox="0 0 7 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <circle cx="3.60952" cy="3.81485" r="3.36782" fill="#EB7B0B"/>
                                     </svg>                                        
                                     Review in 16 Days
                                 </td>
                                 <td>
-                                    <button class="policy-accordion-btn" onclick="openAcc()">Coverage Details</button>
+                                    <button class="policy-accordion-btn coverage">Coverage Details</button>
                                 </td>
                                 <td>
                                     <div class="down-arrow arrow">
@@ -341,22 +341,47 @@
                                 </td>
                             </tr>
                             <tr class="policy-panel fold">
-                                <td colspan="7">
+                                <td colspan="7" class="folded-td">
                                     <table>
                                         <thead class="white-h">
                                             <th class="first"></th>
                                             <th>Coverage</th>
                                             <th>Limit</th>
                                             <th>Deductibles</th>
-                                            <th colspan="3"></th>
+                                            <th><div class="st-h" style="visibility: hidden;">Status</div></th>
+                                            <th><div class="st-h" style="visibility: hidden;">Status</div></th>
+                                            <th></th>
                                         </thead>
                                         <tbody class="white-h">
                                             <tr>
                                                 <td class="first"></td>
-                                                <td>Coverage</td>
-                                                <td>Limit</td>
-                                                <td>Deductibles</td>
-                                                <td rowspan="4" colspan="3"></td>
+                                                <td>General Liability</td>
+                                                <td>$ 63,737.69</td>
+                                                <td>$ 655</td>
+                                                <td class="td-txt-td" rowspan="3" colspan="3">
+                                                    <div class="td-text">
+                                                        <span class="nxt-bill-txt">Your Next Bill</span><br>
+                                                        <span class="nxt-bill-price">$ 64,488</span><br>
+                                                        <a href="#" target="_blank">
+                                                            See Bill 
+                                                            <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M1.12298 10.749C0.734485 11.1375 0.734485 11.7673 1.12298 12.1558C1.51148 12.5443 2.14135 12.5443 2.52985 12.1558L1.12298 10.749ZM13.0995 1.17414C13.0995 0.624726 12.6541 0.179336 12.1047 0.179336L3.1514 0.179337C2.60199 0.179336 2.1566 0.624726 2.1566 1.17414C2.1566 1.72356 2.60199 2.16895 3.1514 2.16895L11.1099 2.16895L11.1099 10.1274C11.1099 10.6768 11.5552 11.1222 12.1047 11.1222C12.6541 11.1222 13.0995 10.6768 13.0995 10.1274L13.0995 1.17414ZM2.52985 12.1558L12.8081 1.87758L11.4012 0.470709L1.12298 10.749L2.52985 12.1558Z" fill="white"/>
+                                                            </svg>
+                                                        </a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="first"></td>
+                                                <td>Property Liability</td>
+                                                <td>$ 27,737.80</td>
+                                                <td>$ 673</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="first"></td>
+                                                <td>Workers Compensation</td>
+                                                <td>$ 45,737.35</td>
+                                                <td>$ 377</td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -374,14 +399,14 @@
                                 <td>Mansion Apothecary</td>
                                 <td>Kilua, Karen, Nairobi KE</td>
                                 <td>$ 2,737.83</td>
-                                <td>
+                                <td class="table-dt-status review">
                                     <svg width="7" height="8" viewBox="0 0 7 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <circle cx="3.60952" cy="3.81485" r="3.36782" fill="#EB7B0B"/>
                                     </svg>                                        
                                     Review in 16 Days
                                 </td>
                                 <td>
-                                    <button class="policy-accordion-btn" onclick="openAcc()">Coverage Details</button>
+                                    <button class="policy-accordion-btn coverage">Coverage Details</button>
                                 </td>
                                 <td>
                                     <div class="down-arrow arrow">
@@ -397,22 +422,47 @@
                                 </td>
                             </tr>
                             <tr class="policy-panel fold">
-                                <td colspan="7">
+                                <td colspan="7" class="folded-td">
                                     <table>
                                         <thead class="white-h">
                                             <th class="first"></th>
                                             <th>Coverage</th>
                                             <th>Limit</th>
                                             <th>Deductibles</th>
-                                            <th colspan="3"></th>
+                                            <th><div class="st-h" style="visibility: hidden;">Status</div></th>
+                                            <th><div class="st-h" style="visibility: hidden;">Status</div></th>
+                                            <th></th>
                                         </thead>
                                         <tbody class="white-h">
                                             <tr>
                                                 <td class="first"></td>
-                                                <td>Coverage</td>
-                                                <td>Limit</td>
-                                                <td>Deductibles</td>
-                                                <td rowspan="4" colspan="3"></td>
+                                                <td>General Liability</td>
+                                                <td>$ 63,737.69</td>
+                                                <td>$ 655</td>
+                                                <td class="td-txt-td" rowspan="3" colspan="3">
+                                                    <div class="td-text">
+                                                        <span class="nxt-bill-txt">Your Next Bill</span><br>
+                                                        <span class="nxt-bill-price">$ 64,488</span><br>
+                                                        <a href="#" target="_blank">
+                                                            See Bill 
+                                                            <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M1.12298 10.749C0.734485 11.1375 0.734485 11.7673 1.12298 12.1558C1.51148 12.5443 2.14135 12.5443 2.52985 12.1558L1.12298 10.749ZM13.0995 1.17414C13.0995 0.624726 12.6541 0.179336 12.1047 0.179336L3.1514 0.179337C2.60199 0.179336 2.1566 0.624726 2.1566 1.17414C2.1566 1.72356 2.60199 2.16895 3.1514 2.16895L11.1099 2.16895L11.1099 10.1274C11.1099 10.6768 11.5552 11.1222 12.1047 11.1222C12.6541 11.1222 13.0995 10.6768 13.0995 10.1274L13.0995 1.17414ZM2.52985 12.1558L12.8081 1.87758L11.4012 0.470709L1.12298 10.749L2.52985 12.1558Z" fill="white"/>
+                                                            </svg>
+                                                        </a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="first"></td>
+                                                <td>Property Liability</td>
+                                                <td>$ 27,737.80</td>
+                                                <td>$ 673</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="first"></td>
+                                                <td>Workers Compensation</td>
+                                                <td>$ 45,737.35</td>
+                                                <td>$ 377</td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -430,14 +480,14 @@
                                 <td>Mansion Apothecary</td>
                                 <td>Kilua, Karen, Nairobi KE</td>
                                 <td>$ 2,737.83</td>
-                                <td>
+                                <td class="table-dt-status review">
                                     <svg width="7" height="8" viewBox="0 0 7 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <circle cx="3.60952" cy="3.81485" r="3.36782" fill="#EB7B0B"/>
                                     </svg>                                        
                                     Review in 16 Days
                                 </td>
                                 <td>
-                                    <button class="policy-accordion-btn" onclick="openAcc()">Coverage Details</button>
+                                    <button class="policy-accordion-btn coverage">Coverage Details</button>
                                 </td>
                                 <td>
                                     <div class="down-arrow arrow">
@@ -453,22 +503,375 @@
                                 </td>
                             </tr>
                             <tr class="policy-panel fold">
-                                <td colspan="7">
+                                <td colspan="7" class="folded-td">
                                     <table>
                                         <thead class="white-h">
                                             <th class="first"></th>
                                             <th>Coverage</th>
                                             <th>Limit</th>
                                             <th>Deductibles</th>
-                                            <th colspan="3"></th>
+                                            <th><div class="st-h" style="visibility: hidden;">Status</div></th>
+                                            <th><div class="st-h" style="visibility: hidden;">Status</div></th>
+                                            <th></th>
                                         </thead>
                                         <tbody class="white-h">
                                             <tr>
                                                 <td class="first"></td>
-                                                <td>Coverage</td>
-                                                <td>Limit</td>
-                                                <td>Deductibles</td>
-                                                <td rowspan="4" colspan="3"></td>
+                                                <td>General Liability</td>
+                                                <td>$ 63,737.69</td>
+                                                <td>$ 655</td>
+                                                <td class="td-txt-td" rowspan="3" colspan="3">
+                                                    <div class="td-text">
+                                                        <span class="nxt-bill-txt">Your Next Bill</span><br>
+                                                        <span class="nxt-bill-price">$ 64,488</span><br>
+                                                        <a href="#" target="_blank">
+                                                            See Bill 
+                                                            <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M1.12298 10.749C0.734485 11.1375 0.734485 11.7673 1.12298 12.1558C1.51148 12.5443 2.14135 12.5443 2.52985 12.1558L1.12298 10.749ZM13.0995 1.17414C13.0995 0.624726 12.6541 0.179336 12.1047 0.179336L3.1514 0.179337C2.60199 0.179336 2.1566 0.624726 2.1566 1.17414C2.1566 1.72356 2.60199 2.16895 3.1514 2.16895L11.1099 2.16895L11.1099 10.1274C11.1099 10.6768 11.5552 11.1222 12.1047 11.1222C12.6541 11.1222 13.0995 10.6768 13.0995 10.1274L13.0995 1.17414ZM2.52985 12.1558L12.8081 1.87758L11.4012 0.470709L1.12298 10.749L2.52985 12.1558Z" fill="white"/>
+                                                            </svg>
+                                                        </a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="first"></td>
+                                                <td>Property Liability</td>
+                                                <td>$ 27,737.80</td>
+                                                <td>$ 673</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="first"></td>
+                                                <td>Workers Compensation</td>
+                                                <td>$ 45,737.35</td>
+                                                <td>$ 377</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr class="policy-accordion view">
+                                <td class="first">
+                                    <div class="keep-me">
+                                        <label class="ctn-check">
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>Mansion Apothecary</td>
+                                <td>Kilua, Karen, Nairobi KE</td>
+                                <td>$ 2,737.83</td>
+                                <td class="table-dt-status review">
+                                    <svg width="7" height="8" viewBox="0 0 7 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="3.60952" cy="3.81485" r="3.36782" fill="#EB7B0B"/>
+                                    </svg>                                        
+                                    Review in 16 Days
+                                </td>
+                                <td>
+                                    <button class="policy-accordion-btn coverage">Coverage Details</button>
+                                </td>
+                                <td>
+                                    <div class="down-arrow arrow">
+                                        <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1.19189 1.37161L6.39962 6.57933C6.71204 6.89175 7.21857 6.89175 7.53099 6.57933L12.7387 1.37161" stroke="#8F8F8F" stroke-width="1.34713" stroke-linecap="round"/>
+                                        </svg>                                    
+                                    </div>
+                                    <div class="up-arrow arrow">
+                                        <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1.19189 1.37161L6.39962 6.57933C6.71204 6.89175 7.21857 6.89175 7.53099 6.57933L12.7387 1.37161" stroke="#8F8F8F" stroke-width="1.34713" stroke-linecap="round"/>
+                                        </svg>                                    
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="policy-panel fold">
+                                <td colspan="7" class="folded-td">
+                                    <table>
+                                        <thead class="white-h">
+                                            <th class="first"></th>
+                                            <th>Coverage</th>
+                                            <th>Limit</th>
+                                            <th>Deductibles</th>
+                                            <th><div class="st-h" style="visibility: hidden;">Status</div></th>
+                                            <th><div class="st-h" style="visibility: hidden;">Status</div></th>
+                                            <th></th>
+                                        </thead>
+                                        <tbody class="white-h">
+                                            <tr>
+                                                <td class="first"></td>
+                                                <td>General Liability</td>
+                                                <td>$ 63,737.69</td>
+                                                <td>$ 655</td>
+                                                <td class="td-txt-td" rowspan="3" colspan="3">
+                                                    <div class="td-text">
+                                                        <span class="nxt-bill-txt">Your Next Bill</span><br>
+                                                        <span class="nxt-bill-price">$ 64,488</span><br>
+                                                        <a href="#" target="_blank">
+                                                            See Bill 
+                                                            <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M1.12298 10.749C0.734485 11.1375 0.734485 11.7673 1.12298 12.1558C1.51148 12.5443 2.14135 12.5443 2.52985 12.1558L1.12298 10.749ZM13.0995 1.17414C13.0995 0.624726 12.6541 0.179336 12.1047 0.179336L3.1514 0.179337C2.60199 0.179336 2.1566 0.624726 2.1566 1.17414C2.1566 1.72356 2.60199 2.16895 3.1514 2.16895L11.1099 2.16895L11.1099 10.1274C11.1099 10.6768 11.5552 11.1222 12.1047 11.1222C12.6541 11.1222 13.0995 10.6768 13.0995 10.1274L13.0995 1.17414ZM2.52985 12.1558L12.8081 1.87758L11.4012 0.470709L1.12298 10.749L2.52985 12.1558Z" fill="white"/>
+                                                            </svg>
+                                                        </a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="first"></td>
+                                                <td>Property Liability</td>
+                                                <td>$ 27,737.80</td>
+                                                <td>$ 673</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="first"></td>
+                                                <td>Workers Compensation</td>
+                                                <td>$ 45,737.35</td>
+                                                <td>$ 377</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr class="policy-accordion view">
+                                <td class="first">
+                                    <div class="keep-me">
+                                        <label class="ctn-check">
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>Mansion Apothecary</td>
+                                <td>Kilua, Karen, Nairobi KE</td>
+                                <td>$ 2,737.83</td>
+                                <td class="table-dt-status expired">
+                                    <svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10.9001 5.43321C10.9001 9.04133 9.69703 10.2444 6.08891 10.2444C2.48078 10.2444 1.27773 9.04133 1.27773 5.43321C1.27773 1.82508 2.48078 0.622028 6.08891 0.622028C9.69703 0.622028 10.9001 1.82508 10.9001 5.43321Z" stroke="#EF1212" stroke-width="0.962236" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M6.09193 7.45923V5.43333" stroke="#EF1212" stroke-width="0.962236" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M6.09427 3.61274H6.08959" stroke="#EF1212" stroke-width="0.962236" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>                                                                               
+                                    Expired
+                                </td>
+                                <td>
+                                    <button class="policy-accordion-btn renew">Renew Policy</button>
+                                </td>
+                                <td>
+                                    <div class="down-arrow arrow">
+                                        <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1.19189 1.37161L6.39962 6.57933C6.71204 6.89175 7.21857 6.89175 7.53099 6.57933L12.7387 1.37161" stroke="#8F8F8F" stroke-width="1.34713" stroke-linecap="round"/>
+                                        </svg>                                    
+                                    </div>
+                                    <div class="up-arrow arrow">
+                                        <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1.19189 1.37161L6.39962 6.57933C6.71204 6.89175 7.21857 6.89175 7.53099 6.57933L12.7387 1.37161" stroke="#8F8F8F" stroke-width="1.34713" stroke-linecap="round"/>
+                                        </svg>                                    
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="policy-panel fold">
+                                <td colspan="7" class="folded-td">
+                                    <table>
+                                        <thead class="white-h">
+                                            <th class="first"></th>
+                                            <th>Coverage</th>
+                                            <th>Limit</th>
+                                            <th>Deductibles</th>
+                                            <th><div class="st-h" style="visibility: hidden;">Status</div></th>
+                                            <th><div class="st-h" style="visibility: hidden;">Status</div></th>
+                                            <th></th>
+                                        </thead>
+                                        <tbody class="white-h">
+                                            <tr>
+                                                <td class="first"></td>
+                                                <td>General Liability</td>
+                                                <td>$ 63,737.69</td>
+                                                <td>$ 655</td>
+                                                <td class="td-txt-td" rowspan="3" colspan="3">
+                                                    <div class="td-text">
+                                                        <span class="nxt-bill-txt">Your Next Bill</span><br>
+                                                        <span class="nxt-bill-price">$ 64,488</span><br>
+                                                        <a href="#" target="_blank">
+                                                            See Bill 
+                                                            <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M1.12298 10.749C0.734485 11.1375 0.734485 11.7673 1.12298 12.1558C1.51148 12.5443 2.14135 12.5443 2.52985 12.1558L1.12298 10.749ZM13.0995 1.17414C13.0995 0.624726 12.6541 0.179336 12.1047 0.179336L3.1514 0.179337C2.60199 0.179336 2.1566 0.624726 2.1566 1.17414C2.1566 1.72356 2.60199 2.16895 3.1514 2.16895L11.1099 2.16895L11.1099 10.1274C11.1099 10.6768 11.5552 11.1222 12.1047 11.1222C12.6541 11.1222 13.0995 10.6768 13.0995 10.1274L13.0995 1.17414ZM2.52985 12.1558L12.8081 1.87758L11.4012 0.470709L1.12298 10.749L2.52985 12.1558Z" fill="white"/>
+                                                            </svg>
+                                                        </a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="first"></td>
+                                                <td>Property Liability</td>
+                                                <td>$ 27,737.80</td>
+                                                <td>$ 673</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="first"></td>
+                                                <td>Workers Compensation</td>
+                                                <td>$ 45,737.35</td>
+                                                <td>$ 377</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr class="policy-accordion view">
+                                <td class="first">
+                                    <div class="keep-me">
+                                        <label class="ctn-check">
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>Mansion Apothecary</td>
+                                <td>Kilua, Karen, Nairobi KE</td>
+                                <td>$ 2,737.83</td>
+                                <td class="table-dt-status review">
+                                    <svg width="7" height="8" viewBox="0 0 7 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="3.60952" cy="3.81485" r="3.36782" fill="#EB7B0B"/>
+                                    </svg>                                        
+                                    Review in 16 Days
+                                </td>
+                                <td>
+                                    <button class="policy-accordion-btn coverage">Coverage Details</button>
+                                </td>
+                                <td>
+                                    <div class="down-arrow arrow">
+                                        <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1.19189 1.37161L6.39962 6.57933C6.71204 6.89175 7.21857 6.89175 7.53099 6.57933L12.7387 1.37161" stroke="#8F8F8F" stroke-width="1.34713" stroke-linecap="round"/>
+                                        </svg>                                    
+                                    </div>
+                                    <div class="up-arrow arrow">
+                                        <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1.19189 1.37161L6.39962 6.57933C6.71204 6.89175 7.21857 6.89175 7.53099 6.57933L12.7387 1.37161" stroke="#8F8F8F" stroke-width="1.34713" stroke-linecap="round"/>
+                                        </svg>                                    
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="policy-panel fold">
+                                <td colspan="7" class="folded-td">
+                                    <table>
+                                        <thead class="white-h">
+                                            <th class="first"></th>
+                                            <th>Coverage</th>
+                                            <th>Limit</th>
+                                            <th>Deductibles</th>
+                                            <th><div class="st-h" style="visibility: hidden;">Status</div></th>
+                                            <th><div class="st-h" style="visibility: hidden;">Status</div></th>
+                                            <th></th>
+                                        </thead>
+                                        <tbody class="white-h">
+                                            <tr>
+                                                <td class="first"></td>
+                                                <td>General Liability</td>
+                                                <td>$ 63,737.69</td>
+                                                <td>$ 655</td>
+                                                <td class="td-txt-td" rowspan="3" colspan="3">
+                                                    <div class="td-text">
+                                                        <span class="nxt-bill-txt">Your Next Bill</span><br>
+                                                        <span class="nxt-bill-price">$ 64,488</span><br>
+                                                        <a href="#" target="_blank">
+                                                            See Bill 
+                                                            <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M1.12298 10.749C0.734485 11.1375 0.734485 11.7673 1.12298 12.1558C1.51148 12.5443 2.14135 12.5443 2.52985 12.1558L1.12298 10.749ZM13.0995 1.17414C13.0995 0.624726 12.6541 0.179336 12.1047 0.179336L3.1514 0.179337C2.60199 0.179336 2.1566 0.624726 2.1566 1.17414C2.1566 1.72356 2.60199 2.16895 3.1514 2.16895L11.1099 2.16895L11.1099 10.1274C11.1099 10.6768 11.5552 11.1222 12.1047 11.1222C12.6541 11.1222 13.0995 10.6768 13.0995 10.1274L13.0995 1.17414ZM2.52985 12.1558L12.8081 1.87758L11.4012 0.470709L1.12298 10.749L2.52985 12.1558Z" fill="white"/>
+                                                            </svg>
+                                                        </a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="first"></td>
+                                                <td>Property Liability</td>
+                                                <td>$ 27,737.80</td>
+                                                <td>$ 673</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="first"></td>
+                                                <td>Workers Compensation</td>
+                                                <td>$ 45,737.35</td>
+                                                <td>$ 377</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr class="policy-accordion view">
+                                <td class="first">
+                                    <div class="keep-me">
+                                        <label class="ctn-check">
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>Mansion Apothecary</td>
+                                <td>Kilua, Karen, Nairobi KE</td>
+                                <td>$ 2,737.83</td>
+                                <td class="table-dt-status expired">
+                                    <svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10.9001 5.43321C10.9001 9.04133 9.69703 10.2444 6.08891 10.2444C2.48078 10.2444 1.27773 9.04133 1.27773 5.43321C1.27773 1.82508 2.48078 0.622028 6.08891 0.622028C9.69703 0.622028 10.9001 1.82508 10.9001 5.43321Z" stroke="#EF1212" stroke-width="0.962236" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M6.09193 7.45923V5.43333" stroke="#EF1212" stroke-width="0.962236" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M6.09427 3.61274H6.08959" stroke="#EF1212" stroke-width="0.962236" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>                                                                               
+                                    Expired
+                                </td>
+                                <td>
+                                    <button class="policy-accordion-btn renew">Renew Policy</button>
+                                </td>
+                                <td>
+                                    <div class="down-arrow arrow">
+                                        <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1.19189 1.37161L6.39962 6.57933C6.71204 6.89175 7.21857 6.89175 7.53099 6.57933L12.7387 1.37161" stroke="#8F8F8F" stroke-width="1.34713" stroke-linecap="round"/>
+                                        </svg>                                    
+                                    </div>
+                                    <div class="up-arrow arrow">
+                                        <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1.19189 1.37161L6.39962 6.57933C6.71204 6.89175 7.21857 6.89175 7.53099 6.57933L12.7387 1.37161" stroke="#8F8F8F" stroke-width="1.34713" stroke-linecap="round"/>
+                                        </svg>                                    
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="policy-panel fold">
+                                <td colspan="7" class="folded-td">
+                                    <table>
+                                        <thead class="white-h">
+                                            <th class="first"></th>
+                                            <th>Coverage</th>
+                                            <th>Limit</th>
+                                            <th>Deductibles</th>
+                                            <th><div class="st-h" style="visibility: hidden;">Status</div></th>
+                                            <th><div class="st-h" style="visibility: hidden;">Status</div></th>
+                                            <th></th>
+                                        </thead>
+                                        <tbody class="white-h">
+                                            <tr>
+                                                <td class="first"></td>
+                                                <td>General Liability</td>
+                                                <td>$ 63,737.69</td>
+                                                <td>$ 655</td>
+                                                <td class="td-txt-td" rowspan="3" colspan="3">
+                                                    <div class="td-text">
+                                                        <span class="nxt-bill-txt">Your Next Bill</span><br>
+                                                        <span class="nxt-bill-price">$ 64,488</span><br>
+                                                        <a href="#" target="_blank">
+                                                            See Bill 
+                                                            <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M1.12298 10.749C0.734485 11.1375 0.734485 11.7673 1.12298 12.1558C1.51148 12.5443 2.14135 12.5443 2.52985 12.1558L1.12298 10.749ZM13.0995 1.17414C13.0995 0.624726 12.6541 0.179336 12.1047 0.179336L3.1514 0.179337C2.60199 0.179336 2.1566 0.624726 2.1566 1.17414C2.1566 1.72356 2.60199 2.16895 3.1514 2.16895L11.1099 2.16895L11.1099 10.1274C11.1099 10.6768 11.5552 11.1222 12.1047 11.1222C12.6541 11.1222 13.0995 10.6768 13.0995 10.1274L13.0995 1.17414ZM2.52985 12.1558L12.8081 1.87758L11.4012 0.470709L1.12298 10.749L2.52985 12.1558Z" fill="white"/>
+                                                            </svg>
+                                                        </a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="first"></td>
+                                                <td>Property Liability</td>
+                                                <td>$ 27,737.80</td>
+                                                <td>$ 673</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="first"></td>
+                                                <td>Workers Compensation</td>
+                                                <td>$ 45,737.35</td>
+                                                <td>$ 377</td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -479,7 +882,439 @@
                 </div>
             </div>
             <div id="quotes" class="policies-tab-content">
-                quotes
+                <div class="policy-table">
+                    <table class="fold-table">
+                        <thead class="top-th">
+                            <tr>
+                                <th class="first">
+                                    <div class="keep-me">
+                                        <label class="ctn-check">
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </div>
+                                </th>
+                                <th>Quote REF</th>
+                                <th>Name</th>
+                                <th>Amount</th>
+                                <th>Status</th>
+                                <th></th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="policy-accordion view">
+                                <td class="first">
+                                    <div class="keep-me">
+                                        <label class="ctn-check">
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>REF29</td>
+                                <td>Payana Ltd</td>
+                                <td>$ 2,737.83</td>
+                                <td class="table-dt-status review">
+                                    <svg width="7" height="8" viewBox="0 0 7 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="3.60952" cy="3.81485" r="3.36782" fill="#EB7B0B"/>
+                                    </svg>                                        
+                                    Review in 16 Days
+                                </td>
+                                <td>
+                                    <button class="policy-accordion-btn coverage">Paid</button>
+                                </td>
+                                <td>
+                                    <div class="down-arrow arrow">
+                                        <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1.19189 1.37161L6.39962 6.57933C6.71204 6.89175 7.21857 6.89175 7.53099 6.57933L12.7387 1.37161" stroke="#8F8F8F" stroke-width="1.34713" stroke-linecap="round"/>
+                                        </svg>                                    
+                                    </div>
+                                    <div class="up-arrow arrow">
+                                        <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1.19189 1.37161L6.39962 6.57933C6.71204 6.89175 7.21857 6.89175 7.53099 6.57933L12.7387 1.37161" stroke="#8F8F8F" stroke-width="1.34713" stroke-linecap="round"/>
+                                        </svg>                                    
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="policy-panel fold">
+                                <td colspan="7" class="folded-td">
+                                    <table>
+                                        <thead class="white-h">
+                                            <th class="first"></th>
+                                            <th>Coverage</th>
+                                            <th>Limit</th>
+                                            <th>Deductibles</th>
+                                            <th><div class="st-h" style="visibility: hidden;">Status</div></th>
+                                            <th><div class="st-h" style="visibility: hidden;">Status</div></th>
+                                            <th></th>
+                                        </thead>
+                                        <tbody class="white-h">
+                                            <tr>
+                                                <td class="first"></td>
+                                                <td>General Liability</td>
+                                                <td>$ 63,737.69</td>
+                                                <td>$ 655</td>
+                                                <td class="td-txt-td" rowspan="3" colspan="3">
+                                                    <div class="td-text">
+                                                        <span class="nxt-bill-txt">Your Next Bill</span><br>
+                                                        <span class="nxt-bill-price">$ 64,488</span><br>
+                                                        <a href="#" target="_blank">
+                                                            See Bill 
+                                                            <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M1.12298 10.749C0.734485 11.1375 0.734485 11.7673 1.12298 12.1558C1.51148 12.5443 2.14135 12.5443 2.52985 12.1558L1.12298 10.749ZM13.0995 1.17414C13.0995 0.624726 12.6541 0.179336 12.1047 0.179336L3.1514 0.179337C2.60199 0.179336 2.1566 0.624726 2.1566 1.17414C2.1566 1.72356 2.60199 2.16895 3.1514 2.16895L11.1099 2.16895L11.1099 10.1274C11.1099 10.6768 11.5552 11.1222 12.1047 11.1222C12.6541 11.1222 13.0995 10.6768 13.0995 10.1274L13.0995 1.17414ZM2.52985 12.1558L12.8081 1.87758L11.4012 0.470709L1.12298 10.749L2.52985 12.1558Z" fill="white"/>
+                                                            </svg>
+                                                        </a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="first"></td>
+                                                <td>Property Liability</td>
+                                                <td>$ 27,737.80</td>
+                                                <td>$ 673</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="first"></td>
+                                                <td>Workers Compensation</td>
+                                                <td>$ 45,737.35</td>
+                                                <td>$ 377</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr class="policy-accordion view">
+                                <td class="first">
+                                    <div class="keep-me">
+                                        <label class="ctn-check">
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>REF29</td>
+                                <td>Payana Ltd</td>
+                                <td>$ 2,737.83</td>
+                                <td class="table-dt-status review">
+                                    <svg width="7" height="8" viewBox="0 0 7 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="3.60952" cy="3.81485" r="3.36782" fill="#EB7B0B"/>
+                                    </svg>                                        
+                                    Review in 16 Days
+                                </td>
+                                <td>
+                                    <button class="policy-accordion-btn coverage">Paid</button>
+                                </td>
+                                <td>
+                                    <div class="down-arrow arrow">
+                                        <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1.19189 1.37161L6.39962 6.57933C6.71204 6.89175 7.21857 6.89175 7.53099 6.57933L12.7387 1.37161" stroke="#8F8F8F" stroke-width="1.34713" stroke-linecap="round"/>
+                                        </svg>                                    
+                                    </div>
+                                    <div class="up-arrow arrow">
+                                        <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1.19189 1.37161L6.39962 6.57933C6.71204 6.89175 7.21857 6.89175 7.53099 6.57933L12.7387 1.37161" stroke="#8F8F8F" stroke-width="1.34713" stroke-linecap="round"/>
+                                        </svg>                                    
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="policy-panel fold">
+                                <td colspan="7" class="folded-td">
+                                    <table>
+                                        <thead class="white-h">
+                                            <th class="first"></th>
+                                            <th>Coverage</th>
+                                            <th>Limit</th>
+                                            <th>Deductibles</th>
+                                            <th><div class="st-h" style="visibility: hidden;">Status</div></th>
+                                            <th><div class="st-h" style="visibility: hidden;">Status</div></th>
+                                            <th></th>
+                                        </thead>
+                                        <tbody class="white-h">
+                                            <tr>
+                                                <td class="first"></td>
+                                                <td>General Liability</td>
+                                                <td>$ 63,737.69</td>
+                                                <td>$ 655</td>
+                                                <td class="td-txt-td" rowspan="3" colspan="3">
+                                                    <div class="td-text">
+                                                        <span class="nxt-bill-txt">Your Next Bill</span><br>
+                                                        <span class="nxt-bill-price">$ 64,488</span><br>
+                                                        <a href="#" target="_blank">
+                                                            See Bill 
+                                                            <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M1.12298 10.749C0.734485 11.1375 0.734485 11.7673 1.12298 12.1558C1.51148 12.5443 2.14135 12.5443 2.52985 12.1558L1.12298 10.749ZM13.0995 1.17414C13.0995 0.624726 12.6541 0.179336 12.1047 0.179336L3.1514 0.179337C2.60199 0.179336 2.1566 0.624726 2.1566 1.17414C2.1566 1.72356 2.60199 2.16895 3.1514 2.16895L11.1099 2.16895L11.1099 10.1274C11.1099 10.6768 11.5552 11.1222 12.1047 11.1222C12.6541 11.1222 13.0995 10.6768 13.0995 10.1274L13.0995 1.17414ZM2.52985 12.1558L12.8081 1.87758L11.4012 0.470709L1.12298 10.749L2.52985 12.1558Z" fill="white"/>
+                                                            </svg>
+                                                        </a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="first"></td>
+                                                <td>Property Liability</td>
+                                                <td>$ 27,737.80</td>
+                                                <td>$ 673</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="first"></td>
+                                                <td>Workers Compensation</td>
+                                                <td>$ 45,737.35</td>
+                                                <td>$ 377</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr class="policy-accordion view">
+                                <td class="first">
+                                    <div class="keep-me">
+                                        <label class="ctn-check">
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>REF29</td>
+                                <td>Payana Ltd</td>
+                                <td>$ 2,737.83</td>
+                                <td class="table-dt-status expired">
+                                    <svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10.9001 5.43321C10.9001 9.04133 9.69703 10.2444 6.08891 10.2444C2.48078 10.2444 1.27773 9.04133 1.27773 5.43321C1.27773 1.82508 2.48078 0.622028 6.08891 0.622028C9.69703 0.622028 10.9001 1.82508 10.9001 5.43321Z" stroke="#EF1212" stroke-width="0.962236" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M6.09193 7.45923V5.43333" stroke="#EF1212" stroke-width="0.962236" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M6.09427 3.61274H6.08959" stroke="#EF1212" stroke-width="0.962236" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>                                                                               
+                                    Expired
+                                </td>
+                                <td>
+                                    <button class="policy-accordion-btn renew">Overdue</button>
+                                </td>
+                                <td>
+                                    <div class="down-arrow arrow">
+                                        <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1.19189 1.37161L6.39962 6.57933C6.71204 6.89175 7.21857 6.89175 7.53099 6.57933L12.7387 1.37161" stroke="#8F8F8F" stroke-width="1.34713" stroke-linecap="round"/>
+                                        </svg>                                    
+                                    </div>
+                                    <div class="up-arrow arrow">
+                                        <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1.19189 1.37161L6.39962 6.57933C6.71204 6.89175 7.21857 6.89175 7.53099 6.57933L12.7387 1.37161" stroke="#8F8F8F" stroke-width="1.34713" stroke-linecap="round"/>
+                                        </svg>                                    
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="policy-panel fold">
+                                <td colspan="7" class="folded-td">
+                                    <table>
+                                        <thead class="white-h">
+                                            <th class="first"></th>
+                                            <th>Coverage</th>
+                                            <th>Limit</th>
+                                            <th>Deductibles</th>
+                                            <th><div class="st-h" style="visibility: hidden;">Status</div></th>
+                                            <th><div class="st-h" style="visibility: hidden;">Status</div></th>
+                                            <th></th>
+                                        </thead>
+                                        <tbody class="white-h">
+                                            <tr>
+                                                <td class="first"></td>
+                                                <td>General Liability</td>
+                                                <td>$ 63,737.69</td>
+                                                <td>$ 655</td>
+                                                <td class="td-txt-td" rowspan="3" colspan="3">
+                                                    <div class="td-text">
+                                                        <span class="nxt-bill-txt">Your Next Bill</span><br>
+                                                        <span class="nxt-bill-price">$ 64,488</span><br>
+                                                        <a href="#" target="_blank">
+                                                            See Bill 
+                                                            <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M1.12298 10.749C0.734485 11.1375 0.734485 11.7673 1.12298 12.1558C1.51148 12.5443 2.14135 12.5443 2.52985 12.1558L1.12298 10.749ZM13.0995 1.17414C13.0995 0.624726 12.6541 0.179336 12.1047 0.179336L3.1514 0.179337C2.60199 0.179336 2.1566 0.624726 2.1566 1.17414C2.1566 1.72356 2.60199 2.16895 3.1514 2.16895L11.1099 2.16895L11.1099 10.1274C11.1099 10.6768 11.5552 11.1222 12.1047 11.1222C12.6541 11.1222 13.0995 10.6768 13.0995 10.1274L13.0995 1.17414ZM2.52985 12.1558L12.8081 1.87758L11.4012 0.470709L1.12298 10.749L2.52985 12.1558Z" fill="white"/>
+                                                            </svg>
+                                                        </a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="first"></td>
+                                                <td>Property Liability</td>
+                                                <td>$ 27,737.80</td>
+                                                <td>$ 673</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="first"></td>
+                                                <td>Workers Compensation</td>
+                                                <td>$ 45,737.35</td>
+                                                <td>$ 377</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr class="policy-accordion view">
+                                <td class="first">
+                                    <div class="keep-me">
+                                        <label class="ctn-check">
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>REF29</td>
+                                <td>Payana Ltd</td>
+                                <td>$ 2,737.83</td>
+                                <td class="table-dt-status review">
+                                    <svg width="7" height="8" viewBox="0 0 7 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="3.60952" cy="3.81485" r="3.36782" fill="#EB7B0B"/>
+                                    </svg>                                        
+                                    Review in 16 Days
+                                </td>
+                                <td>
+                                    <button class="policy-accordion-btn coverage">Paid</button>
+                                </td>
+                                <td>
+                                    <div class="down-arrow arrow">
+                                        <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1.19189 1.37161L6.39962 6.57933C6.71204 6.89175 7.21857 6.89175 7.53099 6.57933L12.7387 1.37161" stroke="#8F8F8F" stroke-width="1.34713" stroke-linecap="round"/>
+                                        </svg>                                    
+                                    </div>
+                                    <div class="up-arrow arrow">
+                                        <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1.19189 1.37161L6.39962 6.57933C6.71204 6.89175 7.21857 6.89175 7.53099 6.57933L12.7387 1.37161" stroke="#8F8F8F" stroke-width="1.34713" stroke-linecap="round"/>
+                                        </svg>                                    
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="policy-panel fold">
+                                <td colspan="7" class="folded-td">
+                                    <table>
+                                        <thead class="white-h">
+                                            <th class="first"></th>
+                                            <th>Coverage</th>
+                                            <th>Limit</th>
+                                            <th>Deductibles</th>
+                                            <th><div class="st-h" style="visibility: hidden;">Status</div></th>
+                                            <th><div class="st-h" style="visibility: hidden;">Status</div></th>
+                                            <th></th>
+                                        </thead>
+                                        <tbody class="white-h">
+                                            <tr>
+                                                <td class="first"></td>
+                                                <td>General Liability</td>
+                                                <td>$ 63,737.69</td>
+                                                <td>$ 655</td>
+                                                <td class="td-txt-td" rowspan="3" colspan="3">
+                                                    <div class="td-text">
+                                                        <span class="nxt-bill-txt">Your Next Bill</span><br>
+                                                        <span class="nxt-bill-price">$ 64,488</span><br>
+                                                        <a href="#" target="_blank">
+                                                            See Bill 
+                                                            <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M1.12298 10.749C0.734485 11.1375 0.734485 11.7673 1.12298 12.1558C1.51148 12.5443 2.14135 12.5443 2.52985 12.1558L1.12298 10.749ZM13.0995 1.17414C13.0995 0.624726 12.6541 0.179336 12.1047 0.179336L3.1514 0.179337C2.60199 0.179336 2.1566 0.624726 2.1566 1.17414C2.1566 1.72356 2.60199 2.16895 3.1514 2.16895L11.1099 2.16895L11.1099 10.1274C11.1099 10.6768 11.5552 11.1222 12.1047 11.1222C12.6541 11.1222 13.0995 10.6768 13.0995 10.1274L13.0995 1.17414ZM2.52985 12.1558L12.8081 1.87758L11.4012 0.470709L1.12298 10.749L2.52985 12.1558Z" fill="white"/>
+                                                            </svg>
+                                                        </a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="first"></td>
+                                                <td>Property Liability</td>
+                                                <td>$ 27,737.80</td>
+                                                <td>$ 673</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="first"></td>
+                                                <td>Workers Compensation</td>
+                                                <td>$ 45,737.35</td>
+                                                <td>$ 377</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr class="policy-accordion view">
+                                <td class="first">
+                                    <div class="keep-me">
+                                        <label class="ctn-check">
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>REF29</td>
+                                <td>Payana Ltd</td>
+                                <td>$ 2,737.83</td>
+                                <td class="table-dt-status expired">
+                                    <svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10.9001 5.43321C10.9001 9.04133 9.69703 10.2444 6.08891 10.2444C2.48078 10.2444 1.27773 9.04133 1.27773 5.43321C1.27773 1.82508 2.48078 0.622028 6.08891 0.622028C9.69703 0.622028 10.9001 1.82508 10.9001 5.43321Z" stroke="#EF1212" stroke-width="0.962236" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M6.09193 7.45923V5.43333" stroke="#EF1212" stroke-width="0.962236" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M6.09427 3.61274H6.08959" stroke="#EF1212" stroke-width="0.962236" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>                                                                               
+                                    Expired
+                                </td>
+                                <td>
+                                    <button class="policy-accordion-btn renew">Canceled</button>
+                                </td>
+                                <td>
+                                    <div class="down-arrow arrow">
+                                        <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1.19189 1.37161L6.39962 6.57933C6.71204 6.89175 7.21857 6.89175 7.53099 6.57933L12.7387 1.37161" stroke="#8F8F8F" stroke-width="1.34713" stroke-linecap="round"/>
+                                        </svg>                                    
+                                    </div>
+                                    <div class="up-arrow arrow">
+                                        <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1.19189 1.37161L6.39962 6.57933C6.71204 6.89175 7.21857 6.89175 7.53099 6.57933L12.7387 1.37161" stroke="#8F8F8F" stroke-width="1.34713" stroke-linecap="round"/>
+                                        </svg>                                    
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="policy-panel fold">
+                                <td colspan="7" class="folded-td">
+                                    <table>
+                                        <thead class="white-h">
+                                            <th class="first"></th>
+                                            <th>Coverage</th>
+                                            <th>Limit</th>
+                                            <th>Deductibles</th>
+                                            <th><div class="st-h" style="visibility: hidden;">Status</div></th>
+                                            <th><div class="st-h" style="visibility: hidden;">Status</div></th>
+                                            <th></th>
+                                        </thead>
+                                        <tbody class="white-h">
+                                            <tr>
+                                                <td class="first"></td>
+                                                <td>General Liability</td>
+                                                <td>$ 63,737.69</td>
+                                                <td>$ 655</td>
+                                                <td class="td-txt-td" rowspan="3" colspan="3">
+                                                    <div class="td-text">
+                                                        <span class="nxt-bill-txt">Your Next Bill</span><br>
+                                                        <span class="nxt-bill-price">$ 64,488</span><br>
+                                                        <a href="#" target="_blank">
+                                                            See Bill 
+                                                            <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M1.12298 10.749C0.734485 11.1375 0.734485 11.7673 1.12298 12.1558C1.51148 12.5443 2.14135 12.5443 2.52985 12.1558L1.12298 10.749ZM13.0995 1.17414C13.0995 0.624726 12.6541 0.179336 12.1047 0.179336L3.1514 0.179337C2.60199 0.179336 2.1566 0.624726 2.1566 1.17414C2.1566 1.72356 2.60199 2.16895 3.1514 2.16895L11.1099 2.16895L11.1099 10.1274C11.1099 10.6768 11.5552 11.1222 12.1047 11.1222C12.6541 11.1222 13.0995 10.6768 13.0995 10.1274L13.0995 1.17414ZM2.52985 12.1558L12.8081 1.87758L11.4012 0.470709L1.12298 10.749L2.52985 12.1558Z" fill="white"/>
+                                                            </svg>
+                                                        </a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="first"></td>
+                                                <td>Property Liability</td>
+                                                <td>$ 27,737.80</td>
+                                                <td>$ 673</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="first"></td>
+                                                <td>Workers Compensation</td>
+                                                <td>$ 45,737.35</td>
+                                                <td>$ 377</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
     </div>
