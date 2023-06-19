@@ -1760,13 +1760,14 @@ table.fold-table>tbody>tr td.table-dt-status svg {
 
 
 /* == INBOX == */
-.inbox-content{
+.inbox-content {
     height: 100%;
     width: 100%;
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
 }
+
 .inbox-messages {
     width: 100%;
     max-width: 260px;
@@ -1856,7 +1857,7 @@ table.fold-table>tbody>tr td.table-dt-status svg {
 }
 
 
-.msged-persons .tab button.active::after{
+.msged-persons .tab button.active::after {
     position: absolute;
     width: 100%;
     height: 3px;
@@ -1867,10 +1868,12 @@ table.fold-table>tbody>tr td.table-dt-status svg {
     left: 0;
     height: 3px;
 }
+
 .msgtabcontent {
     display: none;
 }
-.msg-person{
+
+.msg-person {
     height: fit-content;
     width: 100%;
     padding: 8px 0px;
@@ -1881,25 +1884,30 @@ table.fold-table>tbody>tr td.table-dt-status svg {
     margin: 10px 0px 0px;
     border-bottom: 1px solid #8a8a8a;
 }
-.p-image{
+
+.p-image {
     height: 40px;
     width: 40px;
     margin: 0px 10px 0px 0px;
 }
-.p-image img{
+
+.p-image img {
     height: 40px;
     width: 40px;
     border-radius: 20px;
 }
-.m-p-txt{
+
+.m-p-txt {
     width: 100%;
 }
-.m-p-txt h4{
+
+.m-p-txt h4 {
     font-size: 13px;
     font-weight: 500;
     line-height: 16px;
 }
-.last-msg-time{
+
+.last-msg-time {
     width: 100%;
     display: flex;
     align-items: center;
@@ -1910,15 +1918,18 @@ table.fold-table>tbody>tr td.table-dt-status svg {
     padding: 5px 0px 0px;
     color: #767A81;
 }
-.last-msg-time span.unread-reply{
+
+.last-msg-time span.unread-reply {
     color: #0684F9 !important;
 }
-.msg-p-status{
+
+.msg-p-status {
     position: absolute;
     top: 0px;
     right: 0px;
 }
-.msg-p-status button.unread-msgs{
+
+.msg-p-status button.unread-msgs {
     height: 16px;
     width: 16px;
     border-radius: 8px;
@@ -1928,7 +1939,8 @@ table.fold-table>tbody>tr td.table-dt-status svg {
     font-size: 9px;
     color: #ffffff;
 }
-.msg-p-status button.txt-status{
+
+.msg-p-status button.txt-status {
     height: 16px;
     padding: 1px 10px;
     width: fit-content;
@@ -1939,7 +1951,8 @@ table.fold-table>tbody>tr td.table-dt-status svg {
     font-size: 9px;
     color: #ffffff;
 }
-.msg-box{
+
+.msg-box {
     flex-grow: 2;
     margin: 0px 10px 0px;
     background-color: #ffffff;
@@ -1947,17 +1960,20 @@ table.fold-table>tbody>tr td.table-dt-status svg {
     border-radius: 20px;
     height: 100%;
 }
-.msg-bx-top, 
-.user-mgs-bx{
+
+.msg-bx-top,
+.user-mgs-bx {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.msg-bx-msg{
+
+.msg-bx-msg {
     overflow: hidden;
     overflow-y: scroll;
     scroll-behavior: smooth;
 }
+
 /* For Chrome, Safari and Opera */
 .msg-bx-msg::-webkit-scrollbar {
     display: none;
@@ -1973,36 +1989,41 @@ table.fold-table>tbody>tr td.table-dt-status svg {
     -ms-overflow-style: none;
 }
 
-.msg-bx-top{
+.msg-bx-top {
     border-bottom: 1px solid #697983;
 }
-.user-mgs-bx button{
+
+.user-mgs-bx button {
     background-color: #00000000;
     outline: none;
     border: 0px;
     padding: 5px;
 }
-.user-mgs-bx img{
+
+.user-mgs-bx img {
     height: 42px;
     width: 42px;
     border-radius: 21px;
     margin: 0px 10px 0px;
 }
-.userinfo-msg-bx h4{
+
+.userinfo-msg-bx h4 {
     font-size: 14px;
     font-weight: 600;
     line-height: 16px;
     color: #000000;
     margin: 0px 0px 4px;
 }
-.userinfo-msg-bx p{
+
+.userinfo-msg-bx p {
     font-size: 10px;
     font-weight: 500;
     line-height: 14px;
     color: #AEAEAE;
     margin: 5px 0px 0px;
 }
-.msg-bx-top button.internal{
+
+.msg-bx-top button.internal {
     height: 26px;
     width: fit-content;
     padding: 0px 20px;
@@ -2015,32 +2036,38 @@ table.fold-table>tbody>tr td.table-dt-status svg {
     color: #ffffff;
     border-radius: 13px;
 }
-.message-date-title{
+
+.message-date-title {
     padding: 10px 0px;
     height: fit-content;
     width: 100%;
 }
-.message-date-title p{
+
+.message-date-title p {
     font-size: 14px;
     font-weight: 600;
     line-height: 17px;
     color: #707070;
     text-align: center;
 }
-.boxed-messages{
+
+.boxed-messages {
     width: 100%;
     display: flex;
 }
-.boxed-messages.sender{
+
+.boxed-messages.sender {
     align-items: flex-end;
     justify-content: flex-start;
 }
-.boxed-messages.sender img{
+
+.boxed-messages.sender img {
     height: 40px;
     width: 40px;
     border-radius: 20px;
 }
-.sender-message{
+
+.sender-message {
     padding: 10px;
     width: fit-content;
     max-width: 60%;
@@ -2048,34 +2075,41 @@ table.fold-table>tbody>tr td.table-dt-status svg {
     border-radius: 10px;
     margin: 1px 0px 1px 10px;
 }
-.boxed-messages.reciever{
+
+.boxed-messages.reciever {
     align-items: flex-end;
     justify-content: flex-end;
 }
-.inbox-msg-profile{
+
+.inbox-msg-profile {
     width: 330px;
     background-color: #ffffff;
     border-radius: 20px;
     padding: 20px;
+    margin-bottom: 20px;
 }
-.inbox-msg-profile .p-info{
+
+.inbox-msg-profile .p-info {
     width: 100%;
     height: fit-content;
     padding: 0px 0px 10px;
 }
-.info-p-image{
+
+.info-p-image {
     height: 130px;
     width: 130px;
     margin: auto;
     border-radius: 65px;
     position: relative;
 }
-.info-p-image img{
+
+.info-p-image img {
     height: 130px;
     width: 130px;
     border-radius: 65px;
 }
-.avai-status{
+
+.avai-status {
     height: 16px;
     width: 16px;
     border-radius: 8px;
@@ -2085,21 +2119,25 @@ table.fold-table>tbody>tr td.table-dt-status svg {
     top: 10px;
     right: 10px;
 }
-.avai-status.active{
+
+.avai-status.active {
     background-color: #2AEA6B !important;
 }
-.p-info-text{
+
+.p-info-text {
     text-align: center;
     padding: 20px 0px 10px;
 }
-.p-info-text h3{
+
+.p-info-text h3 {
     font-size: 24px;
     font-weight: 600;
     line-height: 25px;
     color: #000000;
     text-align: center;
 }
-.p-info-text div.status{
+
+.p-info-text div.status {
     margin: 10px auto 0px;
     height: 26px;
     border-radius: 13px;
@@ -2115,53 +2153,113 @@ table.fold-table>tbody>tr td.table-dt-status svg {
     background-color: #F8F8F8;
     text-align: center;
 }
-.p-info-extra{
+
+.p-info-extra {
     padding: 20px 0px 10px;
 }
-.p-info-extra .extras{
+
+.p-info-extra .extras {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 10px 0px;
     border-bottom: 0.5px solid #0000001F;
 }
-.p-info-extra .extras span:nth-child(1){
+
+.p-info-extra .extras span:nth-child(1) {
     font-size: 13px;
     font-weight: 500;
     line-height: 17px;
     color: #989898;
 }
-.p-info-extra .extras span:nth-child(2){
+
+.p-info-extra .extras span:nth-child(2) {
     font-size: 13px;
     font-weight: 600;
     line-height: 17px;
     color: #000000;
 }
-.btm-ex-hold{
+
+.btm-ex-hold {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 0px;
+    padding: 30px 0px 10px;
 }
-.dependants{
+
+.btm-ex-num span:nth-child(1) {
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 13px;
+    color: #000000;
+}
+
+.btm-ex-num .dep-count {
+    height: 16px;
+    width: 16px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FC2929;
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 13px;
+    color: #ffffff;
+    margin: 0px 0px 0px 5px;
+}
+.btm-ex-hold a{
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 16px;
+    color: #0066F9;
+    text-decoration: none;
+}
+.dependants {
     padding: 10px 0px;
     width: 100%;
 }
-.dependant{
+
+.dependant {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin: 0px 0px 10px;
+    border-radius: 14px;
+    background-color: #F8F8F8;
+    padding: 14px 12px;
 }
-.dependant .left, 
-.btm-ex-num{
+
+.dependant .left,
+.btm-ex-num {
     display: flex;
     align-items: center;
     justify-content: flex-start;
 }
-.dependant .right{
+.dependant .left span{
+    margin: 0px 6px 0px;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 13px;
+    color: #1E1E1E;
+}
+.dependant .right {
     display: flex;
     align-items: center;
     justify-content: flex-end;
+}
+.dependant .right span:nth-child(1){
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 12px;
+    color: #A8A8A8;
+    margin: 0px 2px 0px 0px;
+}
+.dependant .right span:nth-child(2){
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 12px;
+    color: #535353;
 }
 /* == || INBOX == */
