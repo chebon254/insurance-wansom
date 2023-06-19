@@ -1972,6 +1972,8 @@ table.fold-table>tbody>tr td.table-dt-status svg {
     overflow: hidden;
     overflow-y: scroll;
     scroll-behavior: smooth;
+    position: relative;
+    height: 100%;
 }
 
 /* For Chrome, Safari and Opera */
@@ -2067,21 +2069,74 @@ table.fold-table>tbody>tr td.table-dt-status svg {
     width: 40px;
     border-radius: 20px;
 }
-
-.sender-message {
-    padding: 10px;
+.sender-message,
+.reciever-message{
+    width: 100%;
+    flex-grow: 2;
+}
+.sender-message-txt{
+    padding: 8px;
     width: fit-content;
     max-width: 60%;
     background-color: #0000000F;
     border-radius: 10px;
     margin: 1px 0px 1px 10px;
 }
-
+.sender-message-txt p{
+    color: #000000;
+}
+.sender-message-time{
+    padding: 5px 10px 5px;
+}
+.sender-message-time span,
+.reciever-message-time span{
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 11px;
+    color: #0000004D;
+}
 .boxed-messages.reciever {
     align-items: flex-end;
     justify-content: flex-end;
 }
+.reciever-message {
+    max-width: fit-content;
+}
+.reciever-message-time{
+    padding: 5px 10px 5px;
+}
+.reciever-message-txt{
+    padding: 10px;
+    width: fit-content;
+    max-width: 100%;
+    background-color: #0066F9;
+    border-radius: 10px;
+    margin: 1px 10px 1px 0px;
+}
+.reciever-message-txt.emoji,
+.sender-message-txt.emoji{
+    background-color: #00000000;
+}
+.reciever-message-txt.emoji p.emoji,
+.sender-message-txt.emoji p.emoji{
+    font-size: 42px;
+    line-height: 48px;
+}
 
+.reciever-message-txt {
+    color: #ffffff;
+}
+.reciever-message-txt p,
+.sender-message-txt p{
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 14px;
+}
+.msg-input{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
 .inbox-msg-profile {
     width: 330px;
     background-color: #ffffff;
