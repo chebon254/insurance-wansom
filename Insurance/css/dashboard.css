@@ -1772,6 +1772,7 @@ table.fold-table>tbody>tr td.table-dt-status svg {
     width: 100%;
     max-width: 260px;
     background-color: #00000000;
+    flex-shrink: 0;
 }
 
 .msg-search {
@@ -1953,12 +1954,14 @@ table.fold-table>tbody>tr td.table-dt-status svg {
 }
 
 .msg-box {
-    flex-grow: 2;
+    flex-grow: 1;
     margin: 0px 10px 0px;
     background-color: #ffffff;
     padding: 14px;
     border-radius: 20px;
     height: 100%;
+    flex-shrink: 0;
+    position: relative;
 }
 
 .msg-bx-top,
@@ -1973,7 +1976,7 @@ table.fold-table>tbody>tr td.table-dt-status svg {
     overflow-y: scroll;
     scroll-behavior: smooth;
     position: relative;
-    height: 100%;
+    flex-grow: 1;
 }
 
 /* For Chrome, Safari and Opera */
@@ -2045,7 +2048,10 @@ table.fold-table>tbody>tr td.table-dt-status svg {
     height: fit-content;
     width: 100%;
 }
-
+.messages{
+    width: 100%;
+    height: 100%;
+}
 .message-date-title p {
     font-size: 14px;
     font-weight: 600;
@@ -2133,9 +2139,29 @@ table.fold-table>tbody>tr td.table-dt-status svg {
     line-height: 14px;
 }
 .msg-input{
+    width: 100%;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
     position: absolute;
-    bottom: 0px;
+    bottom: 14px;
     left: 0px;
+    padding: 0px 14px;
+}
+.msg-input .emoji{
+    margin: 0px 10px 0px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.msg-input  input{
+    height: 40px;
+    border-bottom: 1px solid #8a8a8a !important;
+    outline: none;
+    border: 0px;
+    width: 100%;
+    flex-grow: 2;
 }
 .inbox-msg-profile {
     width: 330px;
@@ -2145,6 +2171,7 @@ table.fold-table>tbody>tr td.table-dt-status svg {
     margin-bottom: 20px;
     position: relative;
     overflow: hidden;
+    flex-shrink: 0;
     /* display: none; */
 }
 .inbox-msg-profile.active{
