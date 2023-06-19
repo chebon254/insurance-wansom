@@ -2035,6 +2035,7 @@ table.fold-table>tbody>tr td.table-dt-status svg {
     line-height: 10px;
     color: #ffffff;
     border-radius: 13px;
+    cursor: pointer;
 }
 
 .message-date-title {
@@ -2087,6 +2088,12 @@ table.fold-table>tbody>tr td.table-dt-status svg {
     border-radius: 20px;
     padding: 20px;
     margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+    /* display: none; */
+}
+.inbox-msg-profile.active{
+    width: 330px !important;
 }
 
 .inbox-msg-profile .p-info {
