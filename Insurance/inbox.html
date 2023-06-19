@@ -276,6 +276,152 @@
         <div class="notify-num">8</div>
       </div>
     </div>
+    <div class="inbox-content">
+      <div class="inbox-messages">
+        <div class="top msg-search">
+          <input type="search" placeholder="Say anything">
+          <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M6.39658 1.34277C9.4889 1.34277 11.9963 3.84953 11.9963 6.94248C11.9963 10.0354 9.4889 12.5422 6.39658 12.5422C3.30363 12.5422 0.796875 10.0354 0.796875 6.94248C0.796875 3.84953 3.30363 1.34277 6.39658 1.34277Z" stroke="#818181" stroke-width="1.01355" stroke-linecap="round" stroke-linejoin="round"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0387 11.6621C12.5483 11.6621 12.9613 12.0757 12.9613 12.5847C12.9613 13.0949 12.5483 13.5079 12.0387 13.5079C11.5291 13.5079 11.1155 13.0949 11.1155 12.5847C11.1155 12.0757 11.5291 11.6621 12.0387 11.6621Z" stroke="#818181" stroke-width="1.01355" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>            
+        </div>
+        <div class="compose-msg-btn">
+          <button>Compose</button>
+          <svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0.577637 10.7931C0.577637 5.72312 0.577637 3.18814 2.15267 1.61312C3.7277 0.0380859 6.26267 0.0380859 11.3326 0.0380859H21.508C26.578 0.0380859 29.1129 0.0380859 30.688 1.61312C32.263 3.18814 32.263 5.72312 32.263 10.7931V20.9685C32.263 26.0384 32.263 28.5734 30.688 30.1484C29.1129 31.7234 26.578 31.7234 21.508 31.7234H11.3326C6.26267 31.7234 3.7277 31.7234 2.15267 30.1484C0.577637 28.5734 0.577637 26.0384 0.577637 20.9685V10.7931Z" fill="#B5C5D5" fill-opacity="0.42"/>
+            <path d="M16.4204 8.83887L16.4204 22.9213" stroke="white" stroke-width="1.34437" stroke-linejoin="round"/>
+            <path d="M23.4617 15.8804L9.37929 15.8804" stroke="white" stroke-width="1.34437" stroke-linejoin="round"/>
+          </svg>            
+        </div>
+        <div class="msged-persons">
+          <div class="tab">
+            <button class="msgtablinks" onclick="openMessaging(event, 'msg-inbox')" id="defaultOpen">Messages</button>
+            <button class="msgtablinks" onclick="openMessaging(event, 'msg-history')">History</button>
+          </div>
+          
+          <div id="msg-inbox" class="msgtabcontent">
+            <div class="msg-person">
+              <div class="p-image">
+                <img src="css/images/message profile image.png" alt="Profile Image for messages">
+              </div>
+              <div class="m-p-txt">
+                <h4>John Kawaida</h4>
+                <div class="last-msg-time">
+                  <span class="last-reply"><strong>You:</strong> Ok, thanks!</span>
+                  <span>9:14 AM</span>
+                </div>
+              </div>
+              <div class="msg-p-status">
+                <button class="unread-msgs">2</button>
+              </div>
+            </div>
+            <div class="msg-person">
+              <div class="p-image">
+                <img src="css/images/message profile image.png" alt="Profile Image for messages">
+              </div>
+              <div class="m-p-txt">
+                <h4>John Kawaida</h4>
+                <div class="last-msg-time">
+                  <span class="last-reply"><strong>You:</strong> Ok, thanks!</span>
+                  <span>9:14 AM</span>
+                </div>
+              </div>
+              <div class="msg-p-status">
+                <button class="txt-status">Solved 🎉</button>
+              </div>
+            </div>
+            <div class="msg-person">
+              <div class="p-image">
+                <img src="css/images/message profile image.png" alt="Profile Image for messages">
+              </div>
+              <div class="m-p-txt">
+                <h4>John Kawaida</h4>
+                <div class="last-msg-time">
+                  <span class="last-reply"><strong>You:</strong> Ok, thanks!</span>
+                  <span>9:14 AM</span>
+                </div>
+              </div>
+              <div class="msg-p-status">
+                <button class="txt-status">Solved 🎉</button>
+              </div>
+            </div>
+            <div class="msg-person">
+              <div class="p-image">
+                <img src="css/images/message profile image.png" alt="Profile Image for messages">
+              </div>
+              <div class="m-p-txt">
+                <h4>John Kawaida</h4>
+                <div class="last-msg-time">
+                  <span class="unread-reply">Hi, was hoping to get it.</span>
+                  <span>Fri</span>
+                </div>
+              </div>
+              <div class="msg-p-status">
+                <button class="txt-status">Solved 🎉</button>
+              </div>
+            </div>
+            <div class="msg-person">
+              <div class="p-image">
+                <img src="css/images/message profile image.png" alt="Profile Image for messages">
+              </div>
+              <div class="m-p-txt">
+                <h4>John Kawaida</h4>
+                <div class="last-msg-time">
+                  <span class="unread-reply">Hi, was hoping to get it.</span>
+                  <span>Fri</span>
+                </div>
+              </div>
+              <div class="msg-p-status">
+                <button class="txt-status">Solved 🎉</button>
+              </div>
+            </div>
+            <div class="msg-person">
+              <div class="p-image">
+                <img src="css/images/message profile image.png" alt="Profile Image for messages">
+              </div>
+              <div class="m-p-txt">
+                <h4>John Kawaida</h4>
+                <div class="last-msg-time">
+                  <span class="unread-reply">Hi, was hoping to get it.</span>
+                  <span>Fri</span>
+                </div>
+              </div>
+              <div class="msg-p-status">
+                <button class="txt-status">Solved 🎉</button>
+              </div>
+            </div>
+          </div>
+          
+          <div id="msg-history" class="msgtabcontent">
+            <h3>Empty</h3>
+          </div>
+        </div>
+      </div>
+      <div class="msg-box">
+          
+      </div>
+      <div class="inbox-msg-profile">
+        <div class="p-info">
+          <div class="info-p-image">
+            <img src="" alt="">
+            <div class="avai-status">
+
+            </div>
+          </div>
+          <div class="p-info-text">
+            <h3></h3>
+            <p></p>
+          </div>
+        </div>
+        <div class="p-info-extra">
+          <div class="extras">
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </div>
   </main>
+  <script src="js/inbox.js"></script>
 </body>
 </html>
