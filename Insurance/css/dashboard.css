@@ -1957,7 +1957,7 @@ table.fold-table>tbody>tr td.table-dt-status svg {
     flex-grow: 1;
     margin: 0px 10px 0px;
     background-color: #ffffff;
-    padding: 14px;
+    padding: 14px 14px 24px;
     border-radius: 20px;
     height: 100%;
     flex-shrink: 0;
@@ -2145,7 +2145,7 @@ table.fold-table>tbody>tr td.table-dt-status svg {
     align-items: center;
     justify-content: flex-start;
     position: absolute;
-    bottom: 14px;
+    bottom: 24px;
     left: 0px;
     padding: 0px 14px;
 }
@@ -2162,6 +2162,13 @@ table.fold-table>tbody>tr td.table-dt-status svg {
     border: 0px;
     width: 100%;
     flex-grow: 2;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 17px;
+    color: #000000;
+}
+.msg-input  input:placeholder{
+    color: #939393;
 }
 .inbox-msg-profile {
     width: 330px;
@@ -2181,21 +2188,21 @@ table.fold-table>tbody>tr td.table-dt-status svg {
 .inbox-msg-profile .p-info {
     width: 100%;
     height: fit-content;
-    padding: 0px 0px 10px;
+    padding: 0px 0px 0px;
 }
 
 .info-p-image {
-    height: 130px;
-    width: 130px;
+    height: 120px;
+    width: 120px;
+    border-radius: 60px;
     margin: auto;
-    border-radius: 65px;
     position: relative;
 }
 
 .info-p-image img {
-    height: 130px;
-    width: 130px;
-    border-radius: 65px;
+    height: 120px;
+    width: 120px;
+    border-radius: 60px;
 }
 
 .avai-status {
@@ -2215,7 +2222,7 @@ table.fold-table>tbody>tr td.table-dt-status svg {
 
 .p-info-text {
     text-align: center;
-    padding: 20px 0px 10px;
+    padding: 10px 0px 5px;
 }
 
 .p-info-text h3 {
@@ -2244,14 +2251,14 @@ table.fold-table>tbody>tr td.table-dt-status svg {
 }
 
 .p-info-extra {
-    padding: 20px 0px 10px;
+    padding: 14px 0px 7px;
 }
 
 .p-info-extra .extras {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 0px;
+    padding: 8px 0px 8px;
     border-bottom: 0.5px solid #0000001F;
 }
 
@@ -2306,7 +2313,7 @@ table.fold-table>tbody>tr td.table-dt-status svg {
     text-decoration: none;
 }
 .dependants {
-    padding: 10px 0px;
+    padding: 4px 0px;
     width: 100%;
 }
 
