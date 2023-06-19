@@ -1761,6 +1761,8 @@ table.fold-table>tbody>tr td.table-dt-status svg {
 
 /* == INBOX == */
 .inbox-content{
+    height: 100%;
+    width: 100%;
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
@@ -1938,14 +1940,81 @@ table.fold-table>tbody>tr td.table-dt-status svg {
     color: #ffffff;
 }
 .msg-box{
-    width: 100%;
+    flex-grow: 2;
     margin: 0px 10px 0px;
     background-color: #ffffff;
     padding: 14px;
     border-radius: 20px;
-
+    height: 100%;
+}
+.msg-bx-top, 
+.user-mgs-bx{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.msg-bx-msg{
+    overflow: hidden;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+/* For Chrome, Safari and Opera */
+.msg-bx-msg::-webkit-scrollbar {
+    display: none;
 }
 
+/* For Firefox */
+.msg-bx-msg {
+    scrollbar-width: none;
+}
+
+/* For Internet Explorer and Edge */
+.msg-bx-msg {
+    -ms-overflow-style: none;
+}
+
+.msg-bx-top{
+    border-bottom: 1px solid #697983;
+}
+.user-mgs-bx button{
+    background-color: #00000000;
+    outline: none;
+    border: 0px;
+    padding: 5px;
+}
+.user-mgs-bx img{
+    height: 42px;
+    width: 42px;
+    border-radius: 21px;
+    margin: 0px 10px 0px;
+}
+.userinfo-msg-bx h4{
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16px;
+    color: #000000;
+    margin: 0px 0px 4px;
+}
+.userinfo-msg-bx p{
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 14px;
+    color: #AEAEAE;
+    margin: 5px 0px 0px;
+}
+.msg-bx-top button.internal{
+    height: 26px;
+    width: fit-content;
+    padding: 0px 20px;
+    border: 0px;
+    outline: none;
+    background-color: #FC2929;
+    font-size: 9px;
+    font-weight: 500;
+    line-height: 10px;
+    color: #ffffff;
+    border-radius: 13px;
+}
 .inbox-msg-profile{
     width: 330px;
     background-color: #ffffff;
